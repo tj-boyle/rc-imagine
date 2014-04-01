@@ -57,38 +57,53 @@ header{
 	padding: 0;
 	width: 100%;
 	height: 100%;
-	// background: linear-gradient(0deg, rgba(82,54,69,.6), rgba(82,54,69,.6)), url(http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52d5bc1a4ec5e_1.JPG) no-repeat center center fixed; 
 	background: linear-gradient(0deg, rgba(82,54,69,.6), rgba(82,54,69,.6)), url("../images/bg.jpg") no-repeat center center fixed;
-	// -webkit-background-size: cover;
-	// -moz-background-size: cover;
-	// -o-background-size: cover;
-	// background-size: cover;
 	@include background-size(cover);
 
-	.center{
-        position: relative;
-        z-index: 999;
-        height: 200px;
-        width: 960px;
-        top: 25%;
-        left: 50%;
-        margin-left: -480px;
+	// .center{
+ //        position: relative;
+ //        z-index: 999;
+ //        height: 200px;
+ //        width: 960px;
+ //        top: 25%;
+ //        left: 50%;
+ //        margin-left: -480px;
 
-    }
+ //    }
 
-    .title{
-    	width: 50%;
-    }
+ //    .title{
+ //    	width: 40%;
+ //    	height: 250px;
+
+ //    	padding-top: 25px;
+ //    }
+
+ //    .image{
+ //    	position: relative;
+ //    	height: 250px;
+ //    	right: 100px;
+ //    }
 	
+	.container{
+		top: 30%;
+	}
 
-	h1, h2, a{
+	.title{
+		padding-top: 42px;
+	}
+	img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		// float: right;
+		// padding-right: 42px;
+	}
+
+	h1, h2, h4, a{
 		color: white;
 		text-transform: uppercase;
 		display: inline-block;		
 	}
-
-
-	h2, a{	font-weight: 400; }
 
 	h1{ 
 		font-weight: 700;
@@ -98,13 +113,25 @@ header{
  	}
 
  	h2{
+ 		font-weight: 400;
  		line-height: 49px;
  		font-size: 48px;
  	}
 
+ 	.action{
+ 		top: 56px;
+ 		text-align: center;
+ 	}
+
+ 	h4{
+ 		margin-left: 7px;
+ 		margin-right: 7px;
+ 	}
+
     a{
+    	font-weight: 400;
     	text-align: center;
-        border: 1px solid white;
+        // border: 1px solid #472921;
         text-decoration: none;
         cursor: pointer;
         font-size: 14px;
@@ -112,10 +139,17 @@ header{
         margin-top: 7px;
         padding: 7px 0;
         width: 150px;
+        background-color: #22ad84;
+        @include border-radius(7px);
+        // @include transition-property(all);
+        // @include transition-property(border-bottom);
+        @include transition-duration(.4s);
+        border-bottom: 3px solid #1B7E61;
     }
     a:hover{
-        color: #523645;
-        background-color: white;
+    	color: white;
+        background-color: #1e1e1e;
+        border-bottom: 3px solid #1e1e1e;
     }
 }
 
