@@ -89,28 +89,48 @@ li {
  * ------------------------------------------------ */
 /* Add site styles here */
 /* For example: a { color: #000; } */
-/* line 47, ../sass/layout.scss */
-body, html {
+/* line 49, ../sass/layout.scss */
+body, html, main {
   height: 100%;
 }
 
-/* line 49, ../sass/layout.scss */
+/* line 51, ../sass/layout.scss */
 .left {
   float: left;
 }
 
-/* line 50, ../sass/layout.scss */
+/* line 52, ../sass/layout.scss */
 .right {
   float: right;
 }
 
-/* line 52, ../sass/layout.scss */
-header {
+/* line 54, ../sass/layout.scss */
+.landing, .about, .media, .contact {
   position: relative;
-  z-index: 0;
   margin: 0;
   padding: 0;
   width: 100%;
+}
+/* line 60, ../sass/layout.scss */
+.landing *, .landing *:hover, .about *, .about *:hover, .media *, .media *:hover, .contact *, .contact *:hover {
+  color: white;
+}
+/* line 64, ../sass/layout.scss */
+.landing h1, .about h1, .media h1, .contact h1 {
+  font-weight: 700;
+  margin-bottom: 0;
+  line-height: 70px;
+  font-size: 75px;
+}
+/* line 71, ../sass/layout.scss */
+.landing h2, .about h2, .media h2, .contact h2 {
+  font-weight: 300;
+  line-height: 49px;
+  font-size: 48px;
+}
+
+/* line 78, ../sass/layout.scss */
+.landing {
   height: 100%;
   background: linear-gradient(0deg, rgba(82, 54, 69, 0.6), rgba(82, 54, 69, 0.6)), url("../images/bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -118,60 +138,35 @@ header {
   -o-background-size: cover;
   background-size: cover;
 }
+/* line 83, ../sass/layout.scss */
+.landing .container {
+  top: 25%;
+}
 /* line 87, ../sass/layout.scss */
-header .container {
-  top: 30%;
+.landing header {
+  margin-top: 42px;
 }
 /* line 91, ../sass/layout.scss */
-header .title {
-  padding-top: 42px;
-}
-/* line 94, ../sass/layout.scss */
-header img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 102, ../sass/layout.scss */
-header h1, header h2, header h4, header a {
-  color: white;
-  text-transform: uppercase;
-  display: inline-block;
-}
-/* line 108, ../sass/layout.scss */
-header h1 {
-  font-weight: 700;
-  margin-bottom: 0;
-  line-height: 70px;
-  font-size: 75px;
-}
-/* line 115, ../sass/layout.scss */
-header h2 {
-  font-weight: 400;
-  line-height: 49px;
-  font-size: 48px;
-}
-/* line 121, ../sass/layout.scss */
-header .action {
-  top: 56px;
+.landing .action {
+  margin-top: 63px;
   text-align: center;
 }
-/* line 126, ../sass/layout.scss */
-header h4 {
+/* line 96, ../sass/layout.scss */
+.landing h4 {
+  display: inline-block;
   margin-left: 7px;
   margin-right: 7px;
-}
-/* line 131, ../sass/layout.scss */
-header a {
   font-weight: 400;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
   font-size: 14px;
-  display: inline-block;
-  margin-top: 7px;
+  text-align: center;
+}
+/* line 105, ../sass/layout.scss */
+.landing a {
+  text-decoration: none;
   padding: 7px 0;
   width: 150px;
+  cursor: pointer;
+  display: inline-block;
   background-color: #22ad84;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -184,11 +179,136 @@ header a {
   transition-duration: 0.4s;
   border-bottom: 3px solid #1B7E61;
 }
-/* line 149, ../sass/layout.scss */
-header a:hover {
-  color: white;
+/* line 116, ../sass/layout.scss */
+.landing a:hover {
   background-color: #1e1e1e;
   border-bottom: 3px solid #1e1e1e;
+}
+
+/* line 122, ../sass/layout.scss */
+.about {
+  padding: 56px 0px;
+  background-color: #22ad84;
+}
+/* line 126, ../sass/layout.scss */
+.about .articles {
+  margin-top: 56px;
+  margin-bottom: 42px;
+}
+/* line 130, ../sass/layout.scss */
+.about article {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+}
+/* line 138, ../sass/layout.scss */
+.about article:first-child {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+/* line 142, ../sass/layout.scss */
+.about article:last-child {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+/* line 147, ../sass/layout.scss */
+.about h1 {
+  text-align: center;
+}
+/* line 151, ../sass/layout.scss */
+.about h3 {
+  font-weight: 300;
+  display: inline-block;
+  border-bottom: 1px solid white;
+}
+/* line 157, ../sass/layout.scss */
+.about ul {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/* line 162, ../sass/layout.scss */
+.about li {
+  display: inline-block;
+  padding: 0 49px;
+}
+/* line 167, ../sass/layout.scss */
+.about img {
+  width: 133px;
+  height: 133px;
+}
+
+/* line 174, ../sass/layout.scss */
+.media {
+  background-color: #D99641;
+  height: 100%;
+}
+
+/* line 179, ../sass/layout.scss */
+.contact {
+  background-color: #332226;
+  height: 100%;
+}
+
+/* KEYFRAMES
+ * ------------------------------------------------- */
+@-webkit-keyframes fadeInLeft {
+  /* line 187, ../sass/layout.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+
+  /* line 191, ../sass/layout.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  /* line 197, ../sass/layout.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  /* line 201, ../sass/layout.scss */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  /* line 208, ../sass/layout.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+  }
+
+  /* line 212, ../sass/layout.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  /* line 218, ../sass/layout.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  /* line 222, ../sass/layout.scss */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* PAGE STYLES
@@ -204,6 +324,21 @@ header a:hover {
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
   /* add code here */
+  /* line 245, ../sass/layout.scss */
+  .landing .container {
+    top: 20%;
+  }
+  /* line 249, ../sass/layout.scss */
+  .landing h1 {
+    line-height: 56px;
+    font-size: 61px;
+  }
+  /* line 254, ../sass/layout.scss */
+  .landing img {
+    margin-top: 21px;
+    width: 192px;
+    height: 192px;
+  }
 }
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -212,6 +347,16 @@ header a:hover {
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
   /* add code here */
+  /* line 271, ../sass/layout.scss */
+  .landing h1, .landing h2 {
+    text-align: center;
+  }
+  /* line 275, ../sass/layout.scss */
+  .landing img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
