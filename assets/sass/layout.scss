@@ -47,6 +47,9 @@ li { line-height: 21px; margin-bottom: 14px;}
 	
 
 body, html, main{	height: 100%; }
+html{
+	overflow-x:hidden;
+}
 
 .left{ float: left; }
 .right{ float: right; }
@@ -64,8 +67,8 @@ body, html, main{	height: 100%; }
 	h1{ 
 		font-weight: 700;
 		margin-bottom: 0;
-		line-height: 70px;
-		font-size: 75px;
+		line-height: 77px;
+		font-size: 81px;
 	}
 
  	h2{
@@ -77,9 +80,16 @@ body, html, main{	height: 100%; }
 
 .landing{
 	height: 100%;
-	background: linear-gradient(0deg, rgba(82,54,69,.6), rgba(82,54,69,.6)), url("../images/bg.jpg") no-repeat center center fixed;
-	@include background-size(cover);
+	// background: linear-gradient(0deg, rgba(82,54,69,.6), rgba(82,54,69,.6)), url("../images/bg.jpg") no-repeat center center fixed;
+	background: rgba(82,54,69,.7);
 	
+	video{
+		position: fixed; right: 0; bottom: 0;
+		min-width: 100%; min-height: 100%;
+		width: auto; height: auto; z-index: -100;
+		@include background-size(cover);
+		overflow: hidden;
+	}
 	.container{
 		top: 25%;
 	}
@@ -145,7 +155,7 @@ body, html, main{	height: 100%; }
 	}
 
 	h1{
-		text-align: center;
+		text-align: left;
 	}
 
 	h3{
