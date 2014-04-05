@@ -182,7 +182,9 @@ html{
 }
 
 .media{
-	background-color: #D99641;
+	// background: url('../images/1.jpg');
+	@include background-size(cover);
+	// background-color: #D99641;
 	height: 100%;
 }
 

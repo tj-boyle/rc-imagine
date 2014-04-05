@@ -1,0 +1,76 @@
+/* line 4, ../sass/superslides.scss */
+#slides {
+  position: relative;
+}
+/* line 6, ../sass/superslides.scss */
+#slides .slides-container {
+  display: none;
+}
+/* line 9, ../sass/superslides.scss */
+#slides .scrollable {
+  *zoom: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+}
+/* line 38, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#slides .scrollable:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 21, ../sass/superslides.scss */
+.slides-navigation {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 3;
+  top: 46%;
+  width: 100%;
+}
+/* line 27, ../sass/superslides.scss */
+.slides-navigation a {
+  position: absolute;
+  display: block;
+}
+/* line 30, ../sass/superslides.scss */
+.slides-navigation a.prev {
+  left: 0;
+}
+/* line 33, ../sass/superslides.scss */
+.slides-navigation a.next {
+  right: 0;
+}
+
+/* line 38, ../sass/superslides.scss */
+.slides-pagination {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+/* line 44, ../sass/superslides.scss */
+.slides-pagination a {
+  border: 2px solid #222;
+  border-radius: 15px;
+  width: 10px;
+  height: 10px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=");
+  margin: 2px;
+  overflow: hidden;
+  text-indent: -100%;
+}
+/* line 54, ../sass/superslides.scss */
+.slides-pagination a.current {
+  background: #222;
+}

@@ -260,11 +260,14 @@ html {
 
 /* line 184, ../sass/layout.scss */
 .media {
-  background-color: #D99641;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 100%;
 }
 
-/* line 189, ../sass/layout.scss */
+/* line 191, ../sass/layout.scss */
 .contact {
   background-color: #332226;
   height: 100%;
@@ -273,13 +276,13 @@ html {
 /* KEYFRAMES
  * ------------------------------------------------- */
 @-webkit-keyframes fadeInLeft {
-  /* line 197, ../sass/layout.scss */
+  /* line 199, ../sass/layout.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-20px);
   }
 
-  /* line 201, ../sass/layout.scss */
+  /* line 203, ../sass/layout.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -287,13 +290,13 @@ html {
 }
 
 @keyframes fadeInLeft {
-  /* line 207, ../sass/layout.scss */
+  /* line 209, ../sass/layout.scss */
   0% {
     opacity: 0;
     transform: translateX(-20px);
   }
 
-  /* line 211, ../sass/layout.scss */
+  /* line 213, ../sass/layout.scss */
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -301,13 +304,13 @@ html {
 }
 
 @-webkit-keyframes fadeInRight {
-  /* line 218, ../sass/layout.scss */
+  /* line 220, ../sass/layout.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(20px);
   }
 
-  /* line 222, ../sass/layout.scss */
+  /* line 224, ../sass/layout.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -315,13 +318,13 @@ html {
 }
 
 @keyframes fadeInRight {
-  /* line 228, ../sass/layout.scss */
+  /* line 230, ../sass/layout.scss */
   0% {
     opacity: 0;
     transform: translateX(20px);
   }
 
-  /* line 232, ../sass/layout.scss */
+  /* line 234, ../sass/layout.scss */
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -341,16 +344,16 @@ html {
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
   /* add code here */
-  /* line 255, ../sass/layout.scss */
+  /* line 257, ../sass/layout.scss */
   .landing .container {
     top: 20%;
   }
-  /* line 259, ../sass/layout.scss */
+  /* line 261, ../sass/layout.scss */
   .landing h1 {
     line-height: 56px;
     font-size: 61px;
   }
-  /* line 264, ../sass/layout.scss */
+  /* line 266, ../sass/layout.scss */
   .landing img {
     margin-top: 21px;
     width: 192px;
@@ -364,11 +367,11 @@ html {
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
   /* add code here */
-  /* line 281, ../sass/layout.scss */
+  /* line 283, ../sass/layout.scss */
   .landing h1, .landing h2 {
     text-align: center;
   }
-  /* line 285, ../sass/layout.scss */
+  /* line 287, ../sass/layout.scss */
   .landing img {
     display: block;
     margin-left: auto;
