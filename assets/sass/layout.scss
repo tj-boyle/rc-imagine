@@ -54,6 +54,27 @@ html{
 .left{ float: left; }
 .right{ float: right; }
 
+.articles{
+	margin-top: 56px;
+	margin-bottom: 42px;
+}
+article{
+	-webkit-animation-duration: 2s; 
+    animation-duration: 2s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-in; 
+    animation-timing-function: ease-in;
+}
+article:first-child{
+	-webkit-animation-name: fadeInLeft; 
+    animation-name: fadeInLeft;
+}
+article:last-child{
+	-webkit-animation-name: fadeInRight; 
+    animation-name: fadeInRight; 
+}
+
 .landing, .about, .media, .contact{
 	position: relative;
 	margin: 0;
@@ -75,6 +96,11 @@ html{
  		font-weight: 300;
  		line-height: 49px;
  		font-size: 48px;
+ 	}
+
+ 	h3{
+ 		display: inline-block;
+		border-bottom: 1px solid white;
  	}
 }
 
@@ -133,37 +159,6 @@ html{
 	padding: 56px 0px;
 	background-color: #22ad84;
 
-	.articles{
-		margin-top: 56px;
-		margin-bottom: 42px;
-	}
-	article{
-		-webkit-animation-duration: 2s; 
-	    animation-duration: 2s; 
-	    -webkit-animation-fill-mode: both; 
-	    animation-fill-mode: both; 
-	    -webkit-animation-timing-function: ease-in; 
-	    animation-timing-function: ease-in;
-	}
-	article:first-child{
-		-webkit-animation-name: fadeInLeft; 
-	    animation-name: fadeInLeft;
-	}
-	article:last-child{
-		-webkit-animation-name: fadeInRight; 
-	    animation-name: fadeInRight; 
-	}
-
-	h1{
-		text-align: left;
-	}
-
-	h3{
-		font-weight: 300;
-		display: inline-block;
-		border-bottom: 1px solid white;
-	}
-	
 	ul{
 		margin-left: auto;
 		margin-right: auto;
@@ -182,15 +177,38 @@ html{
 }
 
 .media{
-	// background: url('../images/1.jpg');
-	@include background-size(cover);
-	// background-color: #D99641;
 	height: 100%;
+
+	.slides-pagination, .prev, .next{
+		padding: 7px;
+	}
+
+	.prev, .next{
+		margin-top: -64px;
+	}
 }
 
 .contact{
-	background-color: #332226;
 	height: 100%;
+	@include box-sizing(border-box);
+	// padding: 56px 0px;
+	background-color: #332226;
+
+	header{
+		margin-top: 56px;
+	}
+	
+	img{
+		display: block;
+		@include border-radius(50%);
+		margin-bottom: 14px;
+	}
+
+	#map{
+		height: 240px;
+		// width: inherit;
+		// display: inline-block;
+	}
 }
 
 /* KEYFRAMES
@@ -269,6 +287,22 @@ html{
  			height: 192px;
  		}
  	}
+
+ 	.about{
+ 		li{
+ 			padding: 0 21px;
+ 		}
+ 	}
+ 	.media{
+ 		.prev, .next{
+ 			margin-top: -32px;
+
+ 			img{
+ 				width: 64px;
+ 				height: 64px;
+ 			}
+ 		}
+ 	}
 }
 
 /* Tablet Portrait size to standard #{strip-units($baseWidthMQ)} (devices and browsers) */
@@ -280,6 +314,11 @@ html{
 @media only screen and (max-width: $tabletWidth - 1) {
 	/* add code here */
 	.landing{
+
+		.container{
+			top: 10%;
+		}
+
 		h1, h2{
  			text-align: center;
  		}
