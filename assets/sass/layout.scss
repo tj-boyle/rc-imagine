@@ -40,6 +40,23 @@ li { line-height: 21px; margin-bottom: 14px;}
 
 .row{   margin-bottom: 21px; }
 
+/* BUTTONS (Baseline Corrections)
+=================================================== */
+input[type="button"],input[type="submit"]{
+	font-weight: 300;
+    background: none;
+    border: none;
+    text-shadow: none !important;
+}
+input[type="button"]:hover, input[type="button"]:active, input[type="submit"]:hover{
+	font-weight: 300;
+    background: none;
+    border: none;
+    color: white;
+    text-shadow: none !important;
+
+}
+
 /* SITE STYLES
  * ------------------------------------------------ */
 /* Add site styles here */
@@ -159,6 +176,10 @@ article:last-child{
 	padding: 56px 0px;
 	background-color: #22ad84;
 
+	h1{
+		// @include text-shadow(rgb(82,54,69) 2px 2px 0)
+	}
+
 	ul{
 		margin-left: auto;
 		margin-right: auto;
@@ -189,23 +210,82 @@ article:last-child{
 }
 
 .contact{
-	height: 100%;
 	@include box-sizing(border-box);
 	// padding: 56px 0px;
-	background-color: #332226;
+	background-color: #34495E;
 
 	header{
 		margin-top: 56px;
 	}
 	
-	img{
-		display: block;
-		@include border-radius(50%);
-		margin-bottom: 14px;
+	article{
+		img{
+			display: block;
+			@include border-radius(50%);
+			margin-bottom: 14px;
+		}
+	}
+
+	#testdiv{
+    	margin-left: 36px; /* Adjust as needed */
+	}
+
+	.ico{
+		display: inline-block;
+		width: 36px;
+		
+		@include border-radius(7px 0 0 7px);
+        @include transition-duration(.4s);
+        border-bottom: 3px solid #1B7E61;
+		background-color: #22ad84;
+	}
+	.ico + div{
+		margin-left: 36px;
+	}
+	#name, #email{
+		height: 33px;
+	}
+	#message{
+		height: 153px;
+	}
+
+	input[type="text"], input:hover[type="text"], input:focus[type="text"], textarea{
+        @include border-radius(0 7px 7px 0);
+        border-bottom: 3px solid #999;
+		@include box-sizing(border-box);
+		width: 100%;
+		color: #ccc;
+	}
+	
+	input[type="button"]{
+		font-size: 14px;
+		height: 49px;
+		width: 100%;
+		color: white;
+		background-color: #E84C3D;
+        @include border-radius(7px);
+        @include transition-duration(.4s);
+        border-bottom: 3px solid #C54033;
+	}
+	input[type="button"]:hover{
+		background-color: #1e1e1e;
+        border-bottom: 3px solid #1e1e1e;
+	} 
+
+	textarea{
+		resize: none;
+	}
+	textarea:focus, textarea:hover{
+		color: #999;
+	}
+
+	h5, h5:hover{
+		color: #22ad84;
 	}
 
 	#map{
-		height: 240px;
+		width: 100%;
+		height: 259px;
 		// width: inherit;
 		// display: inline-block;
 	}

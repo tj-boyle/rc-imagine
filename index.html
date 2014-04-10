@@ -19,8 +19,9 @@
     <main>
         <section class='landing'>
             <video autoplay loop id="bgvid">
-                <!-- <source src="assets/video/SDDGamePlay.webm" type="video/webm"> -->
                 <source src="assets/videos/IMG_RIT_Background.mp4" type="video/mp4">
+                <source src="assets/videos/IMG_RIT_Background.ogg" type="video/ogg">
+                <!-- <source src="assets/video/SDDGamePlay.webm" type="video/webm"> -->
             </video>
             <div class='container'>
                 <div class='five columns offset-by-one'>
@@ -31,12 +32,12 @@
                     <h2>@ IMAGINE RIT</h2>
                 </header>
                 <div class='sixteen columns action'>
-                    <h4><a>Learn more</a></h4>
+                    <h4><a href='#two'>Learn more</a></h4>
                     <h4><a>Main site</a></h4>
                 </div>
             </div>
         </section>
-        <section class='about'>
+        <section class='about' id='two'>
             <div class='container'>
                 <header class='sixteen columns'>
                     <h1>FOR THE</h1><h1> LOVE OF RESEARCH</h1>
@@ -79,26 +80,32 @@
                     <h1>GET TO</h1><h1> KNOW US BETTER</h1>
                 </header>
                 <div class='sixteen columns articles'>
-                    <article class='eight columns alpha'>
-                        <img src='http://placehold.it/128x128'>
-                        <h3>Our Fearless Leader</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rhoncus dui quis ultricies facilisis. Donec adipiscing urna nibh, nec lacinia erat viverra quis. Vivamus nunc ligula, condimentum non sapien bibendum, sodales sollicitudin mi. Nunc varius eu sem pellentesque ultricies.</p>
+                    <form class='six columns alpha'>
+                        <span class='ico left' id='name'></span>
+                        <div>
+                            <input type="text" name="name" value="NAME:" />
+                        </div>
+
+                        <span class='ico left' id='email'></span>
+                        <div>
+                            <input type="text" name="email" value="EMAIL:" />
+                        </div>
+
+                        <span class='ico left' id='message'></span>
+                        <div>
+                            <textarea rows='7'>MESSAGE:</textarea>
+                        </div>
+                        <input type='button' value='Send Message'>
+                    </form>
+                    <article class='eight columns omega offset-by-two'>
+                        <img src='assets/images/gurcharan_khanna.jpg' width='128px' height='128px'>
+                        <h3>Gurcharan Khanna</h3>
+                        <h5>Director of Research Computing</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu enim adipiscing, tempus nulla non, sodales dolor. Mauris accumsan gravida erat, eu fermentum velit laoreet vitae.</p>
                     </article>
-                    <article class='eight columns omega'>
-                        <img src='http://placehold.it/128x128'>
-                        <h3>TJ Boyle</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rhoncus dui quis ultricies facilisis. Donec adipiscing urna nibh, nec lacinia erat viverra quis. Vivamus nunc ligula, condimentum non sapien bibendum, sodales sollicitudin mi. Nunc varius eu sem pellentesque ultricies.</p>
-                    </article>
-                </div>
-                <form class='eight columns'>
-                    <input type='text' value='name'>
-                    <input type='text' value='email'>
-                    <textarea rows='7'>Enter comment here...</textarea>
-                </form>
-                <div class='eight columns' id='map'>
-                    <!-- <div id="map"></div> -->
                 </div>
             </div>
+            <div id='map'></div>
         </section>
     </main>
     <footer>
@@ -115,7 +122,22 @@
             });
         </script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSNWPbzxo6_7n7uHyLs2f8Nx8ZYcmsP4M&sensor=false"></script>
-        
+        <script>
+            $(function() {
+                  $('a[href*=#]:not([href=#])').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                      var target = $(this.hash);
+                      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                      if (target.length) {
+                        $('html,body').animate({
+                          scrollTop: target.offset().top -65
+                        }, 1000);
+                        return false;
+                      }
+                    }
+                  });
+                });
+        </script>
         <script type="text/javascript">
             // When the window has finished loading create our google map below
             google.maps.event.addDomListener(window, 'load', init);
@@ -125,8 +147,10 @@
                 // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
                 var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
-                    zoom: 11,
-                    center: new google.maps.LatLng(43.087445, -77.668962),
+                    zoom: 14,
+                    scrollwheel: false,
+                    streetViewControl: false,
+                    center: new google.maps.LatLng(43.084, -77.668962),
                     mapTypeId: google.maps.MapTypeId.ROADMAP,
 
                     // How you would like to style the map. 
