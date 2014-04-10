@@ -1,79 +1,20 @@
-// See skeleton file for copyright info
+// Mixins
+// --------------------------
 
-@import "dependencies"; // don't remove me
-@import "functions";	// your custom functions
-
-// ---------- ADD CUSTOM MIXINS BELOW HERE
-// @mixin myMixin() { }
-
-// grid ( [ number $width: 960px, [ bool $fluid: false, [  number $gutterWidth: 20px, [ number $colCount: 16 ] ] ] ] )
-@mixin grid($width: $baseWidth, $fluid: $isFluid, $gutterWidth: $baseGutterWidth, $colCount: $baseColCount) {
-	@if ( $fluid == true ) {
-		@include _fluidGrid($colCount);
-	} @else {
-		// we no longer need to set a value for $colWdith because it is generated dynamically right here!
-		// @see https://github.com/atomicpages/skeleton-sass/issues/7
-		$colWidth: ($width / $colCount) - $gutterWidth;
-		@include _fixedGrid($width, $colWidth, $gutterWidth, $colCount);
-	}
+@mixin fa-icon-rotate($degrees, $rotation) {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  -webkit-transform: rotate($degrees);
+     -moz-transform: rotate($degrees);
+      -ms-transform: rotate($degrees);
+       -o-transform: rotate($degrees);
+          transform: rotate($degrees);
 }
 
-// mobileGrid ( [ number $width: 960px, [ number $colCount: 16 ]  ] )
-@mixin mobileGrid($width: $baseWidth, $colCount: $baseColCount) {
-	@include _mobileGrid($width, $colCount);
-}
-
-@mixin keyframes($name) {
-	@-webkit-keyframes #{$name} {
-		@content; 
-	}
-	@-moz-keyframes #{$name} {
-		@content;
-	}
-	@-ms-keyframes #{$name} {
-		@content;
-	}
-	@keyframes #{$name} {
-		@content;
-	} 
-	// @-webkit-keyframes fadeInLeft { 
-	//     0% { 
-	//         opacity: 0; 
-	//         -webkit-transform: translateX(-20px); 
-	//     } 
-	//     100% { 
-	//         opacity: 1; 
-	//         -webkit-transform: translateX(0); 
-	//     } 
-	// }
-	// @-moz-keyframes fadeInLeft { 
-	//     0% { 
-	//         opacity: 0; 
-	//         -moz-transform: translateX(-20px); 
-	//     } 
-	//     100% { 
-	//         opacity: 1; 
-	//         -moz-transform: translateX(0); 
-	//     } 
-	// }
-	// @-ms-keyframes fadeInLeft { 
-	//     0% { 
-	//         opacity: 0; 
-	//         -ms-transform: translateX(-20px); 
-	//     } 
-	//     100% { 
-	//         opacity: 1; 
-	//         -ms-transform: translateX(0); 
-	//     } 
-	// }
-	// @keyframes fadeInLeft { 
-	//     0% { 
-	//         opacity: 0; 
-	//         transform: translateX(-20px); 
-	//     } 
-	//     100% { 
-	//         opacity: 1; 
-	//         transform: translateX(0); 
-	//     } 
-	// } 
+@mixin fa-icon-flip($horiz, $vert, $rotation) {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  -webkit-transform: scale($horiz, $vert);
+     -moz-transform: scale($horiz, $vert);
+      -ms-transform: scale($horiz, $vert);
+       -o-transform: scale($horiz, $vert);
+          transform: scale($horiz, $vert);
 }

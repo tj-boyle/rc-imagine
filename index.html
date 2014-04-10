@@ -4,18 +4,17 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
     <title>RC @ Imagine RIT</title>
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/superslides.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/font-awesome.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/stylesheets/base.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/stylesheets/skeleton.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/stylesheets/layout.css"/>
-    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/superslides.css"/>
-    
     <!--[if IE]>
       <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <![endif]-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
     <main>
         <section class='landing'>
             <video autoplay loop id="bgvid">
@@ -32,7 +31,7 @@
                     <h2>@ IMAGINE RIT</h2>
                 </header>
                 <div class='sixteen columns action'>
-                    <h4><a href='#two'>Learn more</a></h4>
+                    <h4><a href='#two'>Learn more<i class="fa fa-chevron-circle-down"></i></a></h4>
                     <h4><a>Main site</a></h4>
                 </div>
             </div>
@@ -54,15 +53,18 @@
                 </div>
                 <div class='sixteen columns icons'>
                     <ul>
-                        <li><img src='assets/images/network.png'></li>
-                        <li><img src='assets/images/database.png'></li>
-                        <li><img src='assets/images/camera.png'></li>
-                        <li><img src='assets/images/microphone.png'></li>
+                        <li><i class="fa fa-globe fa-5x"></i></li>
+                        <li><i class="fa fa-hdd-o fa-5x"></i></li>
+                        <li><i class="fa fa-video-camera fa-5x"></i></li>
+                        <li><i class="fa fa-microphone fa-5x"></i></li>
                     </ul>
                 </div>
             </div>
+            <div class='arrow'>
+                <a href='#three'><i class="fa fa-chevron-circle-down fa-2x"></i></a>
+            </div>
         </section>
-        <section class='media' id='slides'>
+        <section class='media' id='three'>
             <div class='slides-container'>
                 <img src='assets/images/1.jpg'>
                 <img src='assets/images/2.jpg'>
@@ -73,31 +75,40 @@
                 <a href="#" class="next"><img src='assets/images/right-arrow.png'></a>
                 <a href="#" class="prev"><img src='assets/images/left-arrow.png'></a>
             </nav>
+            <div class='arrow'>
+                <a href='#four'><i class="fa fa-chevron-circle-down fa-2x"></i></a>
+            </div>
         </section>
-        <section class='contact'>
+        <section class='contact' id='four'>
             <div class='container'>
                 <header class='sixteen columns'>
                     <h1>GET TO</h1><h1> KNOW US BETTER</h1>
                 </header>
                 <div class='sixteen columns articles'>
                     <form class='six columns alpha'>
-                        <span class='ico left' id='name'></span>
+                        <span class='left' id='name'>
+                            <i class="fa fa-user"></i>
+                        </span>
                         <div>
                             <input type="text" name="name" value="NAME:" />
                         </div>
 
-                        <span class='ico left' id='email'></span>
+                        <span class='left' id='email'>
+                            <i class="fa fa-envelope"></i>
+                        </span>
                         <div>
                             <input type="text" name="email" value="EMAIL:" />
                         </div>
 
-                        <span class='ico left' id='message'></span>
+                        <span class='left' id='message'>
+                            <i class="fa fa-pencil"></i>
+                        </span>
                         <div>
                             <textarea rows='7'>MESSAGE:</textarea>
                         </div>
                         <input type='button' value='Send Message'>
                     </form>
-                    <article class='eight columns omega offset-by-two'>
+                    <article class='eight columns omega offset-by-one'>
                         <img src='assets/images/gurcharan_khanna.jpg' width='128px' height='128px'>
                         <h3>Gurcharan Khanna</h3>
                         <h5>Director of Research Computing</h5>
@@ -109,19 +120,18 @@
         </section>
     </main>
     <footer>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script src="assets/javascripts/jquery.easing.1.3.js"></script>
         <script src="assets/javascripts/jquery.animate-enhanced.min.js"></script>
         <script src="assets/javascripts/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
         <script>
             $(function() {
-              $('#slides').superslides({
+              $('.media').superslides({
                 hashchange: true,
                 inherit_height_from: ".media"
               });
             });
         </script>
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSNWPbzxo6_7n7uHyLs2f8Nx8ZYcmsP4M&sensor=false"></script>
         <script>
             $(function() {
                   $('a[href*=#]:not([href=#])').click(function() {
@@ -130,7 +140,7 @@
                       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
                       if (target.length) {
                         $('html,body').animate({
-                          scrollTop: target.offset().top -65
+                          scrollTop: target.offset().top
                         }, 1000);
                         return false;
                       }
@@ -138,8 +148,8 @@
                   });
                 });
         </script>
-        <script type="text/javascript">
-            // When the window has finished loading create our google map below
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSNWPbzxo6_7n7uHyLs2f8Nx8ZYcmsP4M&sensor=false"></script>
+        <script type="text/javascript">            // When the window has finished loading create our google map below
             google.maps.event.addDomListener(window, 'load', init);
         
             function init() {

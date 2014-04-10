@@ -43,10 +43,15 @@ li { line-height: 21px; margin-bottom: 14px;}
 /* BUTTONS (Baseline Corrections)
 =================================================== */
 input[type="button"],input[type="submit"]{
+	font-size: 14px;
 	font-weight: 300;
+	width: 100%;
+	color: white;
     background: none;
     border: none;
     text-shadow: none !important;
+    @include border-radius(7px);
+    @include transition-duration(.4s);
 }
 input[type="button"]:hover, input[type="button"]:active, input[type="submit"]:hover{
 	font-weight: 300;
@@ -56,6 +61,7 @@ input[type="button"]:hover, input[type="button"]:active, input[type="submit"]:ho
     text-shadow: none !important;
 
 }
+
 
 /* SITE STYLES
  * ------------------------------------------------ */
@@ -170,29 +176,49 @@ article:last-child{
         background-color: #1e1e1e;
         border-bottom: 3px solid #1e1e1e;
     }
+
+    i{
+    	margin-left: 7px;
+    }
 }
 
 .about{
 	padding: 56px 0px;
 	background-color: #22ad84;
 
-	h1{
-		// @include text-shadow(rgb(82,54,69) 2px 2px 0)
+	p{
+		color: #eee;
+		font-weight: normal;
 	}
-
 	ul{
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
 	}
 	li{
-		display: inline-block;
-		padding: 0 49px; 
-	}
-
-	img{
 		width: 133px;
 		height: 133px;
+		display: inline-block;
+		margin: 0 49px; 
+		border-radius: 50%;
+		background-color: #1B7E61;
+
+		i{
+			margin-top: 23%;
+		}
+	}
+
+	// img{
+	// 	width: 133px;
+	// 	height: 133px;
+	// }
+	.arrow{
+		width: 100%;
+		i{
+			position: relative;
+			left: 50%;
+			margin-left: -12px;
+		}
 	}
 
 }
@@ -211,7 +237,6 @@ article:last-child{
 
 .contact{
 	@include box-sizing(border-box);
-	// padding: 56px 0px;
 	background-color: #34495E;
 
 	header{
@@ -226,27 +251,40 @@ article:last-child{
 		}
 	}
 
-	#testdiv{
-    	margin-left: 36px; /* Adjust as needed */
-	}
-
-	.ico{
+	span{
 		display: inline-block;
 		width: 36px;
-		
 		@include border-radius(7px 0 0 7px);
         @include transition-duration(.4s);
         border-bottom: 3px solid #1B7E61;
 		background-color: #22ad84;
+
+
 	}
-	.ico + div{
+	span + div{
 		margin-left: 36px;
 	}
-	#name, #email{
+	#name{
 		height: 33px;
+		i{
+			margin-top: 10px;
+			margin-left: 12px;
+		}
+	}
+	#email{
+		height: 33px;
+		i{
+			margin-top: 10px;
+			margin-left: 10px;
+		}
 	}
 	#message{
 		height: 153px;
+
+		i{ 
+			margin-top: 70px;
+			margin-left: 12px;
+		}
 	}
 
 	input[type="text"], input:hover[type="text"], input:focus[type="text"], textarea{
@@ -258,18 +296,14 @@ article:last-child{
 	}
 	
 	input[type="button"]{
-		font-size: 14px;
 		height: 49px;
-		width: 100%;
 		color: white;
 		background-color: #E84C3D;
-        @include border-radius(7px);
-        @include transition-duration(.4s);
-        border-bottom: 3px solid #C54033;
+	    border-bottom: 3px solid #C54033;
 	}
 	input[type="button"]:hover{
 		background-color: #1e1e1e;
-        border-bottom: 3px solid #1e1e1e;
+	    border-bottom: 3px solid #1e1e1e;
 	} 
 
 	textarea{
