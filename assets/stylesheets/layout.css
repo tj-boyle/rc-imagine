@@ -225,9 +225,13 @@ h3 {
 /* line 149, ../sass/layout.scss */
 .landing {
   height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 56px 0px;
   background: rgba(82, 54, 69, 0.7);
 }
-/* line 154, ../sass/layout.scss */
+/* line 156, ../sass/layout.scss */
 .landing video {
   position: fixed;
   right: 0;
@@ -243,20 +247,20 @@ h3 {
   background-size: cover;
   overflow: hidden;
 }
-/* line 161, ../sass/layout.scss */
+/* line 163, ../sass/layout.scss */
 .landing .container {
   top: 25%;
 }
-/* line 165, ../sass/layout.scss */
+/* line 167, ../sass/layout.scss */
 .landing header {
   margin-top: 42px;
 }
-/* line 169, ../sass/layout.scss */
+/* line 171, ../sass/layout.scss */
 .landing .action {
   margin-top: 63px;
   text-align: center;
 }
-/* line 174, ../sass/layout.scss */
+/* line 176, ../sass/layout.scss */
 .landing h4 {
   display: inline-block;
   margin-left: 7px;
@@ -265,7 +269,7 @@ h3 {
   font-size: 14px;
   text-align: center;
 }
-/* line 183, ../sass/layout.scss */
+/* line 185, ../sass/layout.scss */
 .landing a {
   text-decoration: none;
   padding: 7px 0;
@@ -284,28 +288,28 @@ h3 {
   transition-duration: 0.4s;
   border-bottom: 3px solid #1B7E61;
 }
-/* line 194, ../sass/layout.scss */
+/* line 196, ../sass/layout.scss */
 .landing a:hover {
   background-color: #1e1e1e;
   border-bottom: 3px solid #1e1e1e;
 }
-/* line 199, ../sass/layout.scss */
+/* line 201, ../sass/layout.scss */
 .landing i {
   margin-left: 7px;
 }
 
-/* line 204, ../sass/layout.scss */
+/* line 206, ../sass/layout.scss */
 .about {
   padding: 56px 0px;
   background-color: #22ad84;
 }
-/* line 208, ../sass/layout.scss */
+/* line 210, ../sass/layout.scss */
 .about ul {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-/* line 213, ../sass/layout.scss */
+/* line 215, ../sass/layout.scss */
 .about li {
   width: 133px;
   height: 133px;
@@ -314,37 +318,37 @@ h3 {
   border-radius: 50%;
   background-color: #1B7E61;
 }
-/* line 221, ../sass/layout.scss */
+/* line 223, ../sass/layout.scss */
 .about li i {
   margin-top: 23%;
 }
 
-/* line 227, ../sass/layout.scss */
+/* line 229, ../sass/layout.scss */
 .media {
   height: 731px;
   background-color: #E84C3D;
 }
-/* line 231, ../sass/layout.scss */
+/* line 233, ../sass/layout.scss */
 .media header {
   position: absolute;
   margin-bottom: -210px;
   z-index: 5;
 }
-/* line 236, ../sass/layout.scss */
+/* line 238, ../sass/layout.scss */
 .media header h1 {
   padding-top: 56px;
 }
-/* line 241, ../sass/layout.scss */
+/* line 243, ../sass/layout.scss */
 .media .arrow {
   position: absolute;
   margin-top: -70px;
   z-index: 5;
 }
-/* line 247, ../sass/layout.scss */
+/* line 249, ../sass/layout.scss */
 .media .desc {
   top: 75%;
 }
-/* line 251, ../sass/layout.scss */
+/* line 253, ../sass/layout.scss */
 .media p {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -352,19 +356,19 @@ h3 {
   padding-left: 7px;
   background-color: #E84C3D;
 }
-/* line 261, ../sass/layout.scss */
+/* line 263, ../sass/layout.scss */
 .media .prev, .media .next {
   margin-top: -64px;
 }
 
-/* line 266, ../sass/layout.scss */
+/* line 268, ../sass/layout.scss */
 .contact {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #34495E;
 }
-/* line 271, ../sass/layout.scss */
+/* line 273, ../sass/layout.scss */
 .contact article img {
   display: block;
   -webkit-border-radius: 50%;
@@ -374,7 +378,7 @@ h3 {
   border-radius: 50%;
   margin-bottom: 14px;
 }
-/* line 278, ../sass/layout.scss */
+/* line 280, ../sass/layout.scss */
 .contact span {
   display: inline-block;
   width: 36px;
@@ -390,38 +394,38 @@ h3 {
   border-bottom: 3px solid #1B7E61;
   background-color: #22ad84;
 }
-/* line 288, ../sass/layout.scss */
+/* line 290, ../sass/layout.scss */
 .contact span + div {
   margin-left: 36px;
 }
-/* line 291, ../sass/layout.scss */
+/* line 293, ../sass/layout.scss */
 .contact #name {
   height: 33px;
 }
-/* line 293, ../sass/layout.scss */
+/* line 295, ../sass/layout.scss */
 .contact #name i {
   margin-top: 10px;
   margin-left: 12px;
 }
-/* line 298, ../sass/layout.scss */
+/* line 300, ../sass/layout.scss */
 .contact #email {
   height: 33px;
 }
-/* line 300, ../sass/layout.scss */
+/* line 302, ../sass/layout.scss */
 .contact #email i {
   margin-top: 10px;
   margin-left: 10px;
 }
-/* line 305, ../sass/layout.scss */
+/* line 307, ../sass/layout.scss */
 .contact #message {
   height: 133px;
 }
-/* line 307, ../sass/layout.scss */
+/* line 309, ../sass/layout.scss */
 .contact #message i {
   margin-top: 70px;
   margin-left: 12px;
 }
-/* line 313, ../sass/layout.scss */
+/* line 315, ../sass/layout.scss */
 .contact input[type="text"], .contact input:hover[type="text"], .contact input:focus[type="text"], .contact textarea {
   -webkit-border-radius: 0 7px 7px 0;
   -moz-border-radius: 0 7px 7px 0;
@@ -435,27 +439,27 @@ h3 {
   width: 100%;
   color: #ccc;
 }
-/* line 321, ../sass/layout.scss */
+/* line 323, ../sass/layout.scss */
 .contact input[type="button"] {
   height: 49px;
   color: white;
   background-color: #E84C3D;
   border-bottom: 3px solid #C54033;
 }
-/* line 327, ../sass/layout.scss */
+/* line 329, ../sass/layout.scss */
 .contact input[type="button"]:hover {
   background-color: #1e1e1e;
   border-bottom: 3px solid #1e1e1e;
 }
-/* line 332, ../sass/layout.scss */
+/* line 334, ../sass/layout.scss */
 .contact textarea {
   resize: none;
 }
-/* line 335, ../sass/layout.scss */
+/* line 337, ../sass/layout.scss */
 .contact textarea:focus, .contact textarea:hover {
   color: #999;
 }
-/* line 339, ../sass/layout.scss */
+/* line 341, ../sass/layout.scss */
 .contact #map {
   width: 100%;
 }
@@ -463,13 +467,13 @@ h3 {
 /* KEYFRAMES
  * ------------------------------------------------- */
 @-webkit-keyframes fadeInLeft {
-  /* line 347, ../sass/layout.scss */
+  /* line 349, ../sass/layout.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-20px);
   }
 
-  /* line 351, ../sass/layout.scss */
+  /* line 353, ../sass/layout.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -477,13 +481,13 @@ h3 {
 }
 
 @keyframes fadeInLeft {
-  /* line 357, ../sass/layout.scss */
+  /* line 359, ../sass/layout.scss */
   0% {
     opacity: 0;
     transform: translateX(-20px);
   }
 
-  /* line 361, ../sass/layout.scss */
+  /* line 363, ../sass/layout.scss */
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -491,13 +495,13 @@ h3 {
 }
 
 @-webkit-keyframes fadeInRight {
-  /* line 368, ../sass/layout.scss */
+  /* line 370, ../sass/layout.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(20px);
   }
 
-  /* line 372, ../sass/layout.scss */
+  /* line 374, ../sass/layout.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -505,13 +509,13 @@ h3 {
 }
 
 @keyframes fadeInRight {
-  /* line 378, ../sass/layout.scss */
+  /* line 380, ../sass/layout.scss */
   0% {
     opacity: 0;
     transform: translateX(20px);
   }
 
-  /* line 382, ../sass/layout.scss */
+  /* line 384, ../sass/layout.scss */
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -531,29 +535,29 @@ h3 {
 /* Smaller than standard strip-units(960px) (devices and browsers) */
 @media only screen and (max-width: 959px) {
   /* add code here */
-  /* line 403, ../sass/layout.scss */
+  /* line 405, ../sass/layout.scss */
   h1 {
     line-height: 56px;
     font-size: 61px;
   }
 
-  /* line 410, ../sass/layout.scss */
+  /* line 412, ../sass/layout.scss */
   .landing .container {
     top: 20%;
   }
-  /* line 415, ../sass/layout.scss */
+  /* line 417, ../sass/layout.scss */
   .landing img {
     margin-top: 21px;
     width: 192px;
     height: 192px;
   }
 
-  /* line 423, ../sass/layout.scss */
+  /* line 425, ../sass/layout.scss */
   .about li {
     margin: 0 21px;
   }
 
-  /* line 429, ../sass/layout.scss */
+  /* line 431, ../sass/layout.scss */
   .media .prev, .media .next {
     margin-top: -32px;
   }
@@ -565,42 +569,42 @@ h3 {
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
   /* add code here */
-  /* line 443, ../sass/layout.scss */
+  /* line 445, ../sass/layout.scss */
   h1, h2, h3, h5, p {
     text-align: center;
   }
 
-  /* line 448, ../sass/layout.scss */
+  /* line 450, ../sass/layout.scss */
   .landing .container {
     top: 10%;
   }
-  /* line 453, ../sass/layout.scss */
+  /* line 455, ../sass/layout.scss */
   .landing img {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 461, ../sass/layout.scss */
+  /* line 463, ../sass/layout.scss */
   .media header {
     margin-bottom: -280px;
   }
 
-  /* line 467, ../sass/layout.scss */
+  /* line 469, ../sass/layout.scss */
   .about li {
     width: 49px;
     height: 49px;
   }
-  /* line 472, ../sass/layout.scss */
+  /* line 474, ../sass/layout.scss */
   .about i {
     font-size: 2em;
   }
 
-  /* line 478, ../sass/layout.scss */
+  /* line 480, ../sass/layout.scss */
   .contact #map {
     display: none;
   }
-  /* line 481, ../sass/layout.scss */
+  /* line 483, ../sass/layout.scss */
   .contact img {
     margin-left: auto;
     margin-right: auto;
@@ -613,19 +617,28 @@ h3 {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
   /* add code here */
-  /* line 497, ../sass/layout.scss */
+  /* line 499, ../sass/layout.scss */
   h1 {
     line-height: 42px;
     font-size: 47px;
   }
 
-  /* line 503, ../sass/layout.scss */
+  /* line 504, ../sass/layout.scss */
+  .landing {
+    height: auto;
+  }
+  /* line 506, ../sass/layout.scss */
+  .landing .container {
+    top: 0%;
+  }
+
+  /* line 511, ../sass/layout.scss */
   .about li {
     width: 42px;
     height: 42px;
     margin: 0 14px;
   }
-  /* line 509, ../sass/layout.scss */
+  /* line 517, ../sass/layout.scss */
   .about i {
     font-size: 1.5em;
   }

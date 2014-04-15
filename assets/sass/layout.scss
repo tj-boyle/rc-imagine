@@ -148,6 +148,8 @@ h3{
 
 .landing{
 	height: 100%;
+	@include box-sizing(border-box);
+	padding: 56px 0px;
 	// background: linear-gradient(0deg, rgba(82,54,69,.6), rgba(82,54,69,.6)), url("../images/bg.jpg") no-repeat center center fixed;
 	background: rgba(82,54,69,.7);
 	
@@ -499,6 +501,12 @@ h3{
 		font-size: 47px;
 	}
 
+	.landing{
+		height: auto;
+		.container{
+			top: 0%;
+		}
+	}
 	.about{
  		li{
  			width: 42px;
