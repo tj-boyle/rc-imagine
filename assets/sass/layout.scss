@@ -77,10 +77,29 @@ html{
 .left{ float: left; }
 .right{ float: right; }
 
-.articles{
+.spacer-top{
 	margin-top: 56px;
+}
+.spacer-bottom{
 	margin-bottom: 42px;
 }
+
+.arrow{
+	width: 100%;
+	z-index: 5;
+	i{
+		position: relative;
+		left: 50%;
+		margin-left: -24px;
+	}
+
+}
+
+p{
+	color: #ddd !important;
+	font-weight: normal;
+}
+
 article{
 	-webkit-animation-duration: 2s; 
     animation-duration: 2s; 
@@ -98,6 +117,24 @@ article:last-child{
     animation-name: fadeInRight; 
 }
 
+h1{ 
+	font-weight: 700;
+	margin-bottom: 0;
+	line-height: 77px;
+	font-size: 76px;
+}
+
+h2{
+	font-weight: 300;
+	line-height: 49px;
+	font-size: 48px;
+}
+
+h3{
+	// display: inline-block;
+	border-bottom: 1px solid white;
+}
+
 .landing, .about, .media, .contact{
 	position: relative;
 	margin: 0;
@@ -107,24 +144,6 @@ article:last-child{
 	*, *:hover{
 		color: white;
 	}
-
-	h1{ 
-		font-weight: 700;
-		margin-bottom: 0;
-		line-height: 77px;
-		font-size: 81px;
-	}
-
- 	h2{
- 		font-weight: 300;
- 		line-height: 49px;
- 		font-size: 48px;
- 	}
-
- 	h3{
- 		display: inline-block;
-		border-bottom: 1px solid white;
- 	}
 }
 
 .landing{
@@ -186,10 +205,6 @@ article:last-child{
 	padding: 56px 0px;
 	background-color: #22ad84;
 
-	p{
-		color: #eee;
-		font-weight: normal;
-	}
 	ul{
 		margin-left: auto;
 		margin-right: auto;
@@ -207,28 +222,41 @@ article:last-child{
 			margin-top: 23%;
 		}
 	}
-
-	// img{
-	// 	width: 133px;
-	// 	height: 133px;
-	// }
-	.arrow{
-		width: 100%;
-		i{
-			position: relative;
-			left: 50%;
-			margin-left: -12px;
-		}
-	}
-
 }
 
 .media{
-	height: 100%;
+	height: 731px;
+	background-color: #E84C3D;
 
-	.slides-pagination, .prev, .next{
-		padding: 7px;
+	header{
+		position: absolute;
+		margin-bottom: -210px;
+		z-index: 5;
+
+		h1{
+			padding-top: 56px;
+		}
 	}
+
+	.arrow{
+		position: absolute;
+		margin-top: -70px;
+		z-index: 5;
+	}
+
+	.desc{
+
+		top: 75%;
+	}
+	p{
+		@include box-sizing(border-box);
+		padding-left: 7px;
+		background-color: #E84C3D;
+	}
+
+	// .slides-pagination, .prev, .next{
+	// 	padding: 7px;
+	// }
 
 	.prev, .next{
 		margin-top: -64px;
@@ -239,10 +267,6 @@ article:last-child{
 	@include box-sizing(border-box);
 	background-color: #34495E;
 
-	header{
-		margin-top: 56px;
-	}
-	
 	article{
 		img{
 			display: block;
@@ -279,8 +303,7 @@ article:last-child{
 		}
 	}
 	#message{
-		height: 153px;
-
+		height: 133px;
 		i{ 
 			margin-top: 70px;
 			margin-left: 12px;
@@ -313,15 +336,8 @@ article:last-child{
 		color: #999;
 	}
 
-	h5, h5:hover{
-		color: #22ad84;
-	}
-
 	#map{
 		width: 100%;
-		height: 259px;
-		// width: inherit;
-		// display: inline-block;
 	}
 }
 
@@ -384,16 +400,17 @@ article:last-child{
 /* Smaller than standard #{strip-units($baseWidthMQ)} (devices and browsers) */
 @media only screen and (max-width: $baseWidthMQ - 1) {
 	/* add code here */
+	h1{
+		line-height: 56px;
+		font-size: 61px;
+	}
+
 	.landing{
 
 		.container{
 			top: 20%;
 		}
 
-		h1{
- 			line-height: 56px;
- 			font-size: 61px;
- 		}
 
  		img{
  			margin-top: 21px;
@@ -404,17 +421,13 @@ article:last-child{
 
  	.about{
  		li{
- 			padding: 0 21px;
+ 			margin: 0 21px;
  		}
  	}
+
  	.media{
  		.prev, .next{
  			margin-top: -32px;
-
- 			img{
- 				width: 64px;
- 				height: 64px;
- 			}
  		}
  	}
 }
@@ -427,15 +440,15 @@ article:last-child{
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: $tabletWidth - 1) {
 	/* add code here */
+	h1, h2, h3, h5, p{
+		text-align: center;
+	}
 	.landing{
 
 		.container{
 			top: 10%;
 		}
 
-		h1, h2{
- 			text-align: center;
- 		}
 
  		img{
 			display: block;
@@ -443,6 +456,33 @@ article:last-child{
 			margin-right: auto;
 		}
 	}
+
+	.media{
+		header{
+			margin-bottom: -280px;
+		}
+	}
+
+	.about{
+ 		li{
+ 			width: 49px;
+ 			height: 49px;
+ 		}
+
+ 		i{
+ 			font-size: 2em;
+ 		}
+ 	}
+
+ 	.contact{
+ 		#map{
+ 			display: none;
+ 		}
+ 		img{
+ 			margin-left: auto;
+ 			margin-right: auto;
+ 		}
+ 	}
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -453,4 +493,21 @@ article:last-child{
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
 	/* add code here */
+
+	h1{
+		line-height: 42px;
+		font-size: 47px;
+	}
+
+	.about{
+ 		li{
+ 			width: 42px;
+ 			height: 42px;
+ 			margin: 0 14px;
+ 		}
+
+ 		i{
+ 			font-size: 1.5em;
+ 		}
+ 	}
 }

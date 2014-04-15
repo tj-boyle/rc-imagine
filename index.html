@@ -41,7 +41,7 @@
                 <header class='sixteen columns'>
                     <h1>FOR THE</h1><h1> LOVE OF RESEARCH</h1>
                 </header>
-                <div class='sixteen columns articles'>
+                <div class='sixteen columns spacer-top spacer-botton'>
                     <article class='eight columns alpha'>
                         <h3>Imagine RIT</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu enim adipiscing, tempus nulla non, sodales dolor. Mauris accumsan gravida erat, eu fermentum velit laoreet vitae. Phasellus quis arcu rhoncus, eleifend leo ac, suscipit velit. Aliquam nec volutpat risus. Aliquam porttitor mollis nibh, ut pellentesque ipsum tincidunt a. Donec feugiat, nisl id sollicitudin rutrum, nibh augue porttitor ipsum, a vulputate quam lectus at elit.</p>
@@ -65,12 +65,37 @@
             </div>
         </section>
         <section class='media' id='three'>
-            <div class='slides-container'>
-                <img src='assets/images/1.jpg'>
-                <img src='assets/images/2.jpg'>
-                <img src='assets/images/3.jpg'>
-                <img src='assets/images/4.jpg'>
+            <div class='container'>
+                <header class='sixteen columns'>
+                    <h1>CHECK OUT<br> OUR PREVIOUS YEARS</h1>
+                </header>
             </div>
+            <ul class='slides-container'>
+                <li>
+                    <img src='assets/images/1.jpg'>
+                    <div class='container desc'>
+                        <p class='eight columns'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu enim adipiscing, tempus nulla non, sodales dolor. Mauris accumsan gravida erat, eu fermentum velit laoreet vitae.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src='assets/images/2.jpg'>
+                    <div class='container desc'>
+                        <p class='eight columns'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu enim adipiscing, tempus nulla non, sodales dolor. Mauris accumsan gravida erat, eu fermentum velit laoreet vitae.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src='assets/images/3.jpg'>
+                    <div class='container desc'>
+                        <p class='eight columns'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu enim adipiscing, tempus nulla non, sodales dolor. Mauris accumsan gravida erat, eu fermentum velit laoreet vitae.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src='assets/images/4.jpg'>
+                    <div class='container desc'>
+                        <p class='eight columns'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu enim adipiscing, tempus nulla non, sodales dolor. Mauris accumsan gravida erat, eu fermentum velit laoreet vitae.</p>
+                    </div>
+                </li>
+            </ul>
             <nav class="slides-navigation">
                 <a href="#" class="next"><img src='assets/images/right-arrow.png'></a>
                 <a href="#" class="prev"><img src='assets/images/left-arrow.png'></a>
@@ -81,42 +106,32 @@
         </section>
         <section class='contact' id='four'>
             <div class='container'>
-                <header class='sixteen columns'>
+                <header class='sixteen columns spacer-top'>
                     <h1>GET TO</h1><h1> KNOW US BETTER</h1>
                 </header>
-                <div class='sixteen columns articles'>
-                    <form class='six columns alpha'>
-                        <span class='left' id='name'>
-                            <i class="fa fa-user"></i>
-                        </span>
-                        <div>
-                            <input type="text" name="name" value="NAME:" />
-                        </div>
-
-                        <span class='left' id='email'>
-                            <i class="fa fa-envelope"></i>
-                        </span>
-                        <div>
-                            <input type="text" name="email" value="EMAIL:" />
-                        </div>
-
-                        <span class='left' id='message'>
-                            <i class="fa fa-pencil"></i>
-                        </span>
-                        <div>
-                            <textarea rows='7'>MESSAGE:</textarea>
-                        </div>
-                        <input type='button' value='Send Message'>
-                    </form>
-                    <article class='eight columns omega offset-by-one'>
+                <div class='seven columns spacer-top spacer-bottom' id='height'>
+                    <article class='six columns'>
                         <img src='assets/images/gurcharan_khanna.jpg' width='128px' height='128px'>
                         <h3>Gurcharan Khanna</h3>
                         <h5>Director of Research Computing</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu enim adipiscing, tempus nulla non, sodales dolor. Mauris accumsan gravida erat, eu fermentum velit laoreet vitae.</p>
                     </article>
+                    <form class='six columns'>
+                        <span class='left' id='name'><i class="fa fa-user"></i></span>
+                        <div><input type="text" name="name" value="NAME:" /></div>
+
+                        <span class='left' id='email'><i class="fa fa-envelope"></i></span>
+                        <div><input type="text" name="email" value="EMAIL:" /></div>
+
+                        <span class='left' id='message'><i class="fa fa-pencil"></i></span>
+                        <div><textarea rows='6'>MESSAGE:</textarea></div>
+                        <input type='button' value='Send Message'>
+                    </form>
+                </div>
+                <div class='nine columns spacer-top spacer-bottom'>
+                    <div id='map'></div>
                 </div>
             </div>
-            <div id='map'></div>
         </section>
     </main>
     <footer>
@@ -128,7 +143,8 @@
             $(function() {
               $('.media').superslides({
                 hashchange: true,
-                inherit_height_from: ".media"
+                inherit_height_from: ".media",
+                pagination: false
               });
             });
         </script>
@@ -177,7 +193,11 @@
 
                 // var mapWidth = document.getElementById('map').style.width;
                 // document.getElementById('map').style.height = mapWidth * .5;
+
+                $("#map").height($("#height").height()-20);
             }
+
+
         </script>
     </footer>
 </body>
