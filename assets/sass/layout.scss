@@ -52,6 +52,7 @@ input[type="button"],input[type="submit"]{
     text-shadow: none !important;
     @include border-radius(7px);
     @include transition-duration(.4s);
+    -webkit-appearance: none;
 }
 input[type="button"]:hover, input[type="button"]:active, input[type="submit"]:hover{
 	font-weight: 300;
@@ -59,6 +60,7 @@ input[type="button"]:hover, input[type="button"]:active, input[type="submit"]:ho
     border: none;
     color: white;
     text-shadow: none !important;
+    -webkit-appearance: none;
 
 }
 
@@ -505,6 +507,11 @@ h3{
 		height: auto;
 		.container{
 			top: 0%;
+		}
+
+		
+		video{
+			display: none;
 		}
 	}
 	.about{
