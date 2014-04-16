@@ -448,8 +448,14 @@ h3{
 	h1, h2, h3, h5, p{
 		text-align: center;
 	}
-	.landing{
 
+	// .spacer-top{
+	// 	margin-top: 42px;
+	// }
+	// .spacer-bottom{
+	// 	margin-bottom: 28px;
+	// }
+	.landing{
 		.container{
 			top: 10%;
 		}
@@ -480,7 +486,8 @@ h3{
  	}
 
  	.contact{
- 		#map{
+
+ 		.map-holder, #map{
  			display: none;
  		}
  		img{
@@ -506,6 +513,8 @@ h3{
 
 	.landing{
 		height: auto;
+		background: rgba(82, 54, 69, 1);
+		padding: 42px 0;
 		.container{
 			top: 0%;
 		}

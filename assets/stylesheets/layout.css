@@ -578,37 +578,37 @@ h3 {
     text-align: center;
   }
 
-  /* line 453, ../sass/layout.scss */
+  /* line 459, ../sass/layout.scss */
   .landing .container {
     top: 10%;
   }
-  /* line 458, ../sass/layout.scss */
+  /* line 464, ../sass/layout.scss */
   .landing img {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 466, ../sass/layout.scss */
+  /* line 472, ../sass/layout.scss */
   .media header {
     margin-bottom: -280px;
   }
 
-  /* line 472, ../sass/layout.scss */
+  /* line 478, ../sass/layout.scss */
   .about li {
     width: 49px;
     height: 49px;
   }
-  /* line 477, ../sass/layout.scss */
+  /* line 483, ../sass/layout.scss */
   .about i {
     font-size: 2em;
   }
 
-  /* line 483, ../sass/layout.scss */
-  .contact #map {
+  /* line 490, ../sass/layout.scss */
+  .contact .map-holder, .contact #map {
     display: none;
   }
-  /* line 486, ../sass/layout.scss */
+  /* line 493, ../sass/layout.scss */
   .contact img {
     margin-left: auto;
     margin-right: auto;
@@ -621,32 +621,34 @@ h3 {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
   /* add code here */
-  /* line 502, ../sass/layout.scss */
+  /* line 509, ../sass/layout.scss */
   h1 {
     line-height: 42px;
     font-size: 47px;
   }
 
-  /* line 507, ../sass/layout.scss */
+  /* line 514, ../sass/layout.scss */
   .landing {
     height: auto;
+    background: #523645;
+    padding: 42px 0;
   }
-  /* line 509, ../sass/layout.scss */
+  /* line 518, ../sass/layout.scss */
   .landing .container {
     top: 0%;
   }
-  /* line 514, ../sass/layout.scss */
+  /* line 523, ../sass/layout.scss */
   .landing video {
     display: none;
   }
 
-  /* line 519, ../sass/layout.scss */
+  /* line 528, ../sass/layout.scss */
   .about li {
     width: 42px;
     height: 42px;
     margin: 0 14px;
   }
-  /* line 525, ../sass/layout.scss */
+  /* line 534, ../sass/layout.scss */
   .about i {
     font-size: 1.5em;
   }
