@@ -327,30 +327,32 @@ h3 {
 
 /* line 231, ../sass/layout.scss */
 .media {
-  height: 731px;
+  max-height: 700px;
+  min-height: 532px;
+  height: 75%;
   background-color: #E84C3D;
 }
-/* line 235, ../sass/layout.scss */
+/* line 237, ../sass/layout.scss */
 .media header {
   position: absolute;
   margin-bottom: -210px;
   z-index: 5;
 }
-/* line 240, ../sass/layout.scss */
+/* line 242, ../sass/layout.scss */
 .media header h1 {
   padding-top: 56px;
 }
-/* line 245, ../sass/layout.scss */
+/* line 247, ../sass/layout.scss */
 .media .arrow {
   position: absolute;
   margin-top: -70px;
   z-index: 5;
 }
-/* line 251, ../sass/layout.scss */
+/* line 253, ../sass/layout.scss */
 .media .desc {
   top: 75%;
 }
-/* line 255, ../sass/layout.scss */
+/* line 256, ../sass/layout.scss */
 .media p {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -358,19 +360,19 @@ h3 {
   padding-left: 7px;
   background-color: #E84C3D;
 }
-/* line 265, ../sass/layout.scss */
+/* line 266, ../sass/layout.scss */
 .media .prev, .media .next {
   margin-top: -64px;
 }
 
-/* line 270, ../sass/layout.scss */
+/* line 271, ../sass/layout.scss */
 .contact {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #34495E;
 }
-/* line 275, ../sass/layout.scss */
+/* line 276, ../sass/layout.scss */
 .contact article img {
   display: block;
   -webkit-border-radius: 50%;
@@ -380,7 +382,7 @@ h3 {
   border-radius: 50%;
   margin-bottom: 14px;
 }
-/* line 282, ../sass/layout.scss */
+/* line 283, ../sass/layout.scss */
 .contact span {
   display: inline-block;
   width: 36px;
@@ -396,38 +398,38 @@ h3 {
   border-bottom: 3px solid #1B7E61;
   background-color: #22ad84;
 }
-/* line 292, ../sass/layout.scss */
+/* line 293, ../sass/layout.scss */
 .contact span + div {
   margin-left: 36px;
 }
-/* line 295, ../sass/layout.scss */
+/* line 296, ../sass/layout.scss */
 .contact #name {
   height: 33px;
 }
-/* line 297, ../sass/layout.scss */
+/* line 298, ../sass/layout.scss */
 .contact #name i {
   margin-top: 10px;
   margin-left: 12px;
 }
-/* line 302, ../sass/layout.scss */
+/* line 303, ../sass/layout.scss */
 .contact #email {
   height: 33px;
 }
-/* line 304, ../sass/layout.scss */
+/* line 305, ../sass/layout.scss */
 .contact #email i {
   margin-top: 10px;
   margin-left: 10px;
 }
-/* line 309, ../sass/layout.scss */
+/* line 310, ../sass/layout.scss */
 .contact #message {
   height: 133px;
 }
-/* line 311, ../sass/layout.scss */
+/* line 312, ../sass/layout.scss */
 .contact #message i {
   margin-top: 70px;
   margin-left: 12px;
 }
-/* line 317, ../sass/layout.scss */
+/* line 318, ../sass/layout.scss */
 .contact input[type="text"], .contact input:hover[type="text"], .contact input:focus[type="text"], .contact textarea {
   -webkit-border-radius: 0 7px 7px 0;
   -moz-border-radius: 0 7px 7px 0;
@@ -441,27 +443,27 @@ h3 {
   width: 100%;
   color: #ccc;
 }
-/* line 325, ../sass/layout.scss */
+/* line 326, ../sass/layout.scss */
 .contact input[type="button"] {
   height: 49px;
   color: white;
   background-color: #E84C3D;
   border-bottom: 3px solid #C54033;
 }
-/* line 331, ../sass/layout.scss */
+/* line 332, ../sass/layout.scss */
 .contact input[type="button"]:hover {
   background-color: #1e1e1e;
   border-bottom: 3px solid #1e1e1e;
 }
-/* line 336, ../sass/layout.scss */
+/* line 337, ../sass/layout.scss */
 .contact textarea {
   resize: none;
 }
-/* line 339, ../sass/layout.scss */
+/* line 340, ../sass/layout.scss */
 .contact textarea:focus, .contact textarea:hover {
   color: #999;
 }
-/* line 343, ../sass/layout.scss */
+/* line 344, ../sass/layout.scss */
 .contact #map {
   width: 100%;
 }
@@ -469,13 +471,13 @@ h3 {
 /* KEYFRAMES
  * ------------------------------------------------- */
 @-webkit-keyframes fadeInLeft {
-  /* line 351, ../sass/layout.scss */
+  /* line 352, ../sass/layout.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-20px);
   }
 
-  /* line 355, ../sass/layout.scss */
+  /* line 356, ../sass/layout.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -483,13 +485,13 @@ h3 {
 }
 
 @keyframes fadeInLeft {
-  /* line 361, ../sass/layout.scss */
+  /* line 362, ../sass/layout.scss */
   0% {
     opacity: 0;
     transform: translateX(-20px);
   }
 
-  /* line 365, ../sass/layout.scss */
+  /* line 366, ../sass/layout.scss */
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -497,13 +499,13 @@ h3 {
 }
 
 @-webkit-keyframes fadeInRight {
-  /* line 372, ../sass/layout.scss */
+  /* line 373, ../sass/layout.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(20px);
   }
 
-  /* line 376, ../sass/layout.scss */
+  /* line 377, ../sass/layout.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -511,13 +513,13 @@ h3 {
 }
 
 @keyframes fadeInRight {
-  /* line 382, ../sass/layout.scss */
+  /* line 383, ../sass/layout.scss */
   0% {
     opacity: 0;
     transform: translateX(20px);
   }
 
-  /* line 386, ../sass/layout.scss */
+  /* line 387, ../sass/layout.scss */
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -537,29 +539,29 @@ h3 {
 /* Smaller than standard strip-units(960px) (devices and browsers) */
 @media only screen and (max-width: 959px) {
   /* add code here */
-  /* line 407, ../sass/layout.scss */
+  /* line 408, ../sass/layout.scss */
   h1 {
     line-height: 56px;
     font-size: 61px;
   }
 
-  /* line 414, ../sass/layout.scss */
+  /* line 415, ../sass/layout.scss */
   .landing .container {
     top: 20%;
   }
-  /* line 419, ../sass/layout.scss */
+  /* line 420, ../sass/layout.scss */
   .landing img {
     margin-top: 21px;
     width: 192px;
     height: 192px;
   }
 
-  /* line 427, ../sass/layout.scss */
+  /* line 428, ../sass/layout.scss */
   .about li {
     margin: 0 21px;
   }
 
-  /* line 433, ../sass/layout.scss */
+  /* line 434, ../sass/layout.scss */
   .media .prev, .media .next {
     margin-top: -32px;
   }
@@ -571,42 +573,42 @@ h3 {
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
   /* add code here */
-  /* line 447, ../sass/layout.scss */
+  /* line 448, ../sass/layout.scss */
   h1, h2, h3, h5, p {
     text-align: center;
   }
 
-  /* line 452, ../sass/layout.scss */
+  /* line 453, ../sass/layout.scss */
   .landing .container {
     top: 10%;
   }
-  /* line 457, ../sass/layout.scss */
+  /* line 458, ../sass/layout.scss */
   .landing img {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 465, ../sass/layout.scss */
+  /* line 466, ../sass/layout.scss */
   .media header {
     margin-bottom: -280px;
   }
 
-  /* line 471, ../sass/layout.scss */
+  /* line 472, ../sass/layout.scss */
   .about li {
     width: 49px;
     height: 49px;
   }
-  /* line 476, ../sass/layout.scss */
+  /* line 477, ../sass/layout.scss */
   .about i {
     font-size: 2em;
   }
 
-  /* line 482, ../sass/layout.scss */
+  /* line 483, ../sass/layout.scss */
   .contact #map {
     display: none;
   }
-  /* line 485, ../sass/layout.scss */
+  /* line 486, ../sass/layout.scss */
   .contact img {
     margin-left: auto;
     margin-right: auto;
@@ -619,32 +621,32 @@ h3 {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
   /* add code here */
-  /* line 501, ../sass/layout.scss */
+  /* line 502, ../sass/layout.scss */
   h1 {
     line-height: 42px;
     font-size: 47px;
   }
 
-  /* line 506, ../sass/layout.scss */
+  /* line 507, ../sass/layout.scss */
   .landing {
     height: auto;
   }
-  /* line 508, ../sass/layout.scss */
+  /* line 509, ../sass/layout.scss */
   .landing .container {
     top: 0%;
   }
-  /* line 513, ../sass/layout.scss */
+  /* line 514, ../sass/layout.scss */
   .landing video {
     display: none;
   }
 
-  /* line 518, ../sass/layout.scss */
+  /* line 519, ../sass/layout.scss */
   .about li {
     width: 42px;
     height: 42px;
     margin: 0 14px;
   }
-  /* line 524, ../sass/layout.scss */
+  /* line 525, ../sass/layout.scss */
   .about i {
     font-size: 1.5em;
   }

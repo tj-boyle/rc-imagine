@@ -229,7 +229,9 @@ h3{
 }
 
 .media{
-	height: 731px;
+	max-height: 700px;
+	min-height: 532px;
+	height: 75%;
 	background-color: #E84C3D;
 
 	header{
@@ -249,7 +251,6 @@ h3{
 	}
 
 	.desc{
-
 		top: 75%;
 	}
 	p{
