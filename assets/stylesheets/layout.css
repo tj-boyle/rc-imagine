@@ -536,7 +536,7 @@ h3 {
 @media only screen and (min-width: 960px) and (max-width: 1280px) {
   /* add code here */
 }
-/* Smaller than standard strip-units(960px) (devices and browsers) */
+/* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
   /* add code here */
   /* line 408, ../sass/layout.scss */
@@ -566,7 +566,7 @@ h3 {
     margin-top: -32px;
   }
 }
-/* Tablet Portrait size to standard strip-units(960px) (devices and browsers) */
+/* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   /* add code here */
 }
