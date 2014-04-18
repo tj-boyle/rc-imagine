@@ -92,7 +92,7 @@ html{
 	i{
 		position: relative;
 		left: 50%;
-		margin-left: -24px;
+		margin-left: -12px;
 	}
 
 }
@@ -226,6 +226,25 @@ h3{
 			margin-top: 23%;
 		}
 	}
+
+	.outside-link {
+		text-decoration: none;
+		color: #E84C3D;
+		
+		i{
+			margin-left: 7px;
+			color: #E84C3D;
+		}
+	}
+	.outside-link:hover{
+		text-decoration: underline;
+		color: #E84C3D;
+
+		i{
+			color: #E84C3D;
+			text-decoration: underline;
+		}
+	}
 }
 
 .media{
@@ -263,8 +282,8 @@ h3{
 	// 	padding: 7px;
 	// }
 
-	.prev, .next{
-		margin-top: -64px;
+	.slides-navigation a{
+		padding: 0 14px;
 	}
 }
 
