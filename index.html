@@ -173,19 +173,19 @@
         </script>
         <script>
             $(function() {
-                  $('a[href*=#]:not([href=#])').click(function() {
-                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                      var target = $(this.hash);
-                      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                      if (target.length) {
-                        $('html,body').animate({
-                          scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                      }
-                    }
-                  });
-                });
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                  }
+                }
+              });
+            });
         </script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSNWPbzxo6_7n7uHyLs2f8Nx8ZYcmsP4M&sensor=false"></script>
         <script type="text/javascript">            // When the window has finished loading create our google map below
@@ -219,6 +219,20 @@
 
                 $("#map").height($("#height").height()-20);
             }
+        </script>
+        <script>
+            if($(window).width() < 480){
+                $("video").attr("preload", "none");
+            }
+
+            $(window).resize(function(){
+               if($(window).width() < 480){
+                    $("video").attr("preload", "none");
+                }
+                else{
+                    $("video").attr("preload", "auto");
+                } 
+            });
         </script>
     </footer>
 </body>
