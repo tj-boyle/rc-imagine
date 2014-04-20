@@ -89,10 +89,15 @@ html{
 .arrow{
 	width: 100%;
 	z-index: 5;
+
 	i{
 		position: relative;
 		left: 50%;
 		margin-left: -12px;
+		@include transition-duration(.4s);
+	}
+	i:hover{
+		color: #1e1e1e;
 	}
 
 }
@@ -185,9 +190,10 @@ h3{
  	}
 
     a{
+    	color: white;
         text-decoration: none;
         padding: 7px 0;
-        width: 150px;
+        width: 133px;
         cursor: pointer;
         display: inline-block;
         background-color: #22ad84;
@@ -221,30 +227,41 @@ h3{
 		margin: 0 49px; 
 		border-radius: 50%;
 		background-color: #1B7E61;
+		@include transition-duration(.4s);
 
+		a{
+			border-radius: 50%;
+			display: block;
+
+		}
 		i{
 			margin-top: 23%;
 		}
 	}
+	li:hover{
+		background-color: #1e1e1e;
+	}
 
-	.outside-link {
+	.imagine {
 		text-decoration: none;
-		color: #E84C3D;
+		color: #1e1e1e;
 		
 		i{
 			margin-left: 7px;
-			color: #E84C3D;
+			color: #1e1e1e;
 		}
 	}
-	.outside-link:hover{
+	.imagine:hover{
 		text-decoration: underline;
-		color: #E84C3D;
+		color: #1e1e1e;
 
 		i{
-			color: #E84C3D;
+			color: #1e1e1e;
 			text-decoration: underline;
 		}
 	}
+
+
 }
 
 .media{
@@ -290,7 +307,7 @@ h3{
 	p{
 		@include box-sizing(border-box);
 		padding-left: 7px;
-		background-color: #E84C3D;
+		background-color: rgb(82, 54, 69);
 	}
 
 	// .slides-pagination, .prev, .next{
@@ -357,13 +374,13 @@ h3{
 		color: #ccc;
 	}
 	
-	input[type="button"]{
+	input[type="submit"]{
 		height: 49px;
 		color: white;
 		background-color: #E84C3D;
 	    border-bottom: 3px solid #C54033;
 	}
-	input[type="button"]:hover{
+	input[type="submit"]:hover{
 		background-color: #1e1e1e;
 	    border-bottom: 3px solid #1e1e1e;
 	} 
@@ -450,6 +467,9 @@ h3{
 			top: 20%;
 		}
 
+		.action{
+ 			margin-top: 21px;
+ 		}
 
  		img{
  			margin-top: 21px;
@@ -548,7 +568,7 @@ h3{
 	.landing{
 		height: auto;
 		background: rgba(82, 54, 69, 1);
-		padding: 42px 0;
+		padding: 35px 0;
 		.container{
 			top: 0%;
 		}
@@ -567,6 +587,11 @@ h3{
 
  		i{
  			font-size: 1.5em;
+ 		}
+
+ 		.imagine{
+ 			width: 100%;
+ 			text-align: center;
  		}
  	}
 }
