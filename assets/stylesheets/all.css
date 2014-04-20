@@ -1742,23 +1742,32 @@ h3 {
   .landing .container {
     top: 0%;
   }
-  /* line 577, ../sass/layout.scss */
+  /* line 576, ../sass/layout.scss */
+  .landing header {
+    margin-top: 28px;
+  }
+  /* line 580, ../sass/layout.scss */
+  .landing img {
+    width: 128px;
+    height: 128px;
+  }
+  /* line 585, ../sass/layout.scss */
   .landing video {
     preload: none;
     display: none;
   }
 
-  /* line 583, ../sass/layout.scss */
+  /* line 591, ../sass/layout.scss */
   .about li {
     width: 42px;
     height: 42px;
     margin: 0 14px;
   }
-  /* line 589, ../sass/layout.scss */
+  /* line 597, ../sass/layout.scss */
   .about i {
     font-size: 1.5em;
   }
-  /* line 593, ../sass/layout.scss */
+  /* line 601, ../sass/layout.scss */
   .about .imagine {
     width: 100%;
     text-align: center;
