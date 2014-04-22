@@ -11,34 +11,34 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <main>
-        <section class='landing'>
-            <video autoplay loop id="bgvid">
-                <!-- <source src="assets/videos/IMG_RIT_Background.mp4" type="video/mp4"> -->
-                <source src="assets/videos/IMG_RIT_Background.webm" type="video/webm">
-                <source src="assets/videos/IMG_RIT_Background.ogg" type="video/ogg">
-            </video>
-            <div class='container'>
-                <div class='five columns offset-by-one'>
-                    <img src='assets/images/bulb.png'/>
-                </div>
-                <header class='nine columns'>
-                    <h1>RESEARCH COMPUTING</h1>
-                    <h2>@ IMAGINE RIT</h2>
-                </header>
-                <div class='sixteen columns action'>
-                    <h4><a href='#two'>Learn more<i class="fa fa-chevron-circle-down"></i></a></h4>
-                    <!-- <h4><a href="https://rc.rit.edu">Main site</a></h4> -->
-                </div>
+    <header class='landing'>
+        <video autoplay loop id="bgvid">
+            <!-- <source src="assets/videos/IMG_RIT_Background.mp4" type="video/mp4"> -->
+            <source src="assets/videos/IMG_RIT_Background.webm" type="video/webm">
+            <source src="assets/videos/IMG_RIT_Background.ogg" type="video/ogg">
+        </video>
+        <div class='container'>
+            <div class='five columns offset-by-one'>
+                <img src='assets/images/bulb.png'/>
             </div>
-        </section>
+            <header class='nine columns'>
+                <h1>RESEARCH COMPUTING</h1>
+                <h2>@ IMAGINE RIT</h2>
+            </header>
+            <div class='sixteen columns action'>
+                <h4><a href='#two'>Learn more<i class="fa fa-chevron-circle-down"></i></a></h4>
+                <!-- <h4><a href="https://rc.rit.edu">Main site</a></h4> -->
+            </div>
+        </div>
+    </header>
+    <main>
         <section class='about' id='two'>
             <div class='container'>
                 <header class='sixteen columns'>
                     <h1>FOR THE</h1><h1> LOVE OF RESEARCH</h1>
                 </header>
-                <div class='sixteen columns'>
-                    <article class='eight columns alpha'>
+                <div class='eight columns'  id='height'>
+                    <article class='eight columns alpha omega'>
                         <h3>Imagine RIT</h3>
                         <p>Imagine RIT is designed to demonstrate what can be accomplished when, 
                             as RIT President Bill Destler likes to say, 
@@ -46,27 +46,23 @@
                             Visitors have witnessed a robot that serves hot dogs, a concrete canoe
                              that floats and dozens of musical and theatrical performances. 
                              Children have made freeze-dried ice cream, test driven Segways 
-                             and jumped around in a bounce house.</p>
-                        <a class='imagine' href='http://www.rit.edu/imagine/'>Imagine RIT website<i class="fa fa-arrow-right"></i></a>
+                             and jumped around in a bounce house.<br>
+                            <a class='imagine' href='http://www.rit.edu/imagine/'>Imagine RIT website<i class="fa fa-arrow-right"></i></a>
+                        </p>
                     </article>
-                    <article class='eight columns omega'>
+                    <article class='eight columns alpha omega'>
                         <h3>Our Role</h3>
                         <p>Our mission is to foster research at RIT by partnering with researchers 
                             to support advanced research technology resources in computation, 
                             collaboration, and community building among RIT research faculty, staff and students.
                             Our guiding principles are communication, collaboration, and service. 
-                            We aim to know the researchers, their research, and their needs. We want to involve researchers in our planning process and communicate our capabilities and vision to researchers.
-                            </p>
-                        <a class='imagine' href='http://www.rc.rit.edu'>Our main website<i class="fa fa-arrow-right"></i></a>
+                            We aim to know the researchers, their research, and their needs. We want to involve researchers in our planning process and communicate our capabilities and vision to researchers.<br>
+                            <a class='imagine' href='http://www.rc.rit.edu'>Our main website<i class="fa fa-arrow-right"></i></a>
+                        </p>
                     </article>
                 </div>
-                <div class='sixteen columns icons'>
-                    <ul>
-                        <li><a href="https://rc.rit.edu/collab.html"><i class="fa fa-globe fa-5x"></i></a></li>
-                        <li><a href="https://rc.rit.edu/data-plan.html"><i class="fa fa-cloud-download fa-5x"></i></a></li>
-                        <li><a href="https://rc.rit.edu/live-video.html"><i class="fa fa-video-camera fa-5x"></i></a></li>
-                        <li><a href="https://rc.rit.edu/seevogh.html"><i class="fa fa-microphone fa-5x"></i></a></li>
-                    </ul>
+                <div class='eight columns map-holder'>
+                    <div id='map'></div>
                 </div>
             </div>
             <div class='arrow'>
@@ -101,9 +97,9 @@
                 <li>
                     <img src='assets/images/slider-imgs/3.jpg' width='1366px' height='911px'>
                     <div class='container desc'>
-                        <p class='eight columns'>Gallaudet University, a University with an 
-                            equally large deaf population, teamed up with us last year. 
-                            Many of the deaf visitors enjoyed seeing the Univserity on camera.</p>
+                        <p class='eight columns'>Gallaudet University, a University with similar
+                            deaf technical program as RIT, teamed up with us last year. 
+                            Many of the deaf visitors enjoyed seeing the University on camera.</p>
                     </div>
                 </li>
                 <li>
@@ -158,34 +154,40 @@
                 <header class='sixteen columns'>
                     <h1>GET TO</h1><h1> KNOW US BETTER</h1>
                 </header>
-                <div class='seven columns' id='height'>
-                    <article class='six columns'>
-                        <img src='assets/images/gurcharan_khanna.jpg' width='128px' height='128px'>
-                        <h3>Gurcharan Khanna</h3>
-                        <h5>Director of Research Computing</h5>
-                        <p>Dr. Khanna is the director of Research Computing, pushing us ever forward 
-                            in innovation in the field of high quality video and audio streaming. 
-                            Through his vision we have become stronger and more driven than ever before.</p>
-                    </article>
-                    <form action="MAILTO:gskpop@rit.edu" method="post" enctype="text/plain" class='six columns'>
-                        <span class='left' id='name'><i class="fa fa-user"></i></span>
-                        <div><input type="text" name="name" onfocus="if(this.value == 'NAME:') { this.value = ''; }" onblur="if(this.value == '') {this.value = 'NAME:'; }" value="NAME:" /></div>
+                <article class='eight columns'>
+                    <img src='assets/images/gurcharan_khanna.jpg' width='128px' height='128px'>
+                    <h3>Gurcharan Khanna</h3>
+                    <h5>Director of Research Computing</h5>
+                    <p>Dr. Khanna is the director of Research Computing, pushing us ever forward 
+                        in innovation in the field of high quality video and audio streaming. 
+                        Through his vision we have become stronger and more driven than ever before.</p>
+                </article>
+                <form action="MAILTO:gskpop@rit.edu" method="post" enctype="text/plain" class='seven columns offset-by-one'>
+                    <span class='left' id='name'><i class="fa fa-user"></i></span>
+                    <div><input type="text" name="name" onfocus="if(this.value == 'NAME:') { this.value = ''; }" onblur="if(this.value == '') {this.value = 'NAME:'; }" value="NAME:" /></div>
 
-                        <span class='left' id='email'><i class="fa fa-envelope"></i></span>
-                        <div><input type="text" name="email" onfocus="if(this.value == 'EMAIL:') { this.value = ''; }" onblur="if(this.value == '') {this.value = 'EMAIL:'; }" value="EMAIL:" /></div>
+                    <span class='left' id='email'><i class="fa fa-envelope"></i></span>
+                    <div><input type="text" name="email" onfocus="if(this.value == 'EMAIL:') { this.value = ''; }" onblur="if(this.value == '') {this.value = 'EMAIL:'; }" value="EMAIL:" /></div>
 
-                        <span class='left' id='message'><i class="fa fa-pencil"></i></span>
-                        <div><textarea onfocus="if(this.value == 'MESSAGE:') { this.value = ''; }" onblur="if(this.value == '') {this.value = 'MESSAGE:'; }" rows='6'>MESSAGE:</textarea></div>
-                        <input type='submit' value='Send Message'>
-                    </form>
-                </div>
-                <div class='nine columns map-holder'>
-                    <div id='map'></div>
+                    <span class='left' id='message'><i class="fa fa-pencil"></i></span>
+                    <div><textarea onfocus="if(this.value == 'MESSAGE:') { this.value = ''; }" onblur="if(this.value == '') {this.value = 'MESSAGE:'; }" rows='6'>MESSAGE:</textarea></div>
+                    <input type='submit' value='Send Message'>
+                </form>
+                <div class='sixteen columns icons'>
+                    <ul>
+                        <li><a href="https://rc.rit.edu/collab.html"><i class="fa fa-globe fa-5x"></i></a></li>
+                        <li><a href="https://rc.rit.edu/data-plan.html"><i class="fa fa-cloud-download fa-5x"></i></a></li>
+                        <li><a href="https://rc.rit.edu/live-video.html"><i class="fa fa-video-camera fa-5x"></i></a></li>
+                        <li><a href="https://rc.rit.edu/seevogh.html"><i class="fa fa-microphone fa-5x"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class='footer'>
+        <div class='container'>
+            <p>Created with <i class="fa fa-heart"></i> by TJ Boyle</p>
+        </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script src="assets/javascripts/all.js" charset="utf-8"></script>
         <script>

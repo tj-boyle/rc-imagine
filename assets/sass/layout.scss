@@ -71,7 +71,7 @@ input[type="button"]:hover, input[type="button"]:active, input[type="submit"]:ho
 /* For example: a { color: #000; } */
 	
 
-body, html, main{	height: 100%; }
+body, html{	height: 100%; }
 html{
 	overflow-x:hidden;
 }
@@ -80,6 +80,7 @@ html{
 .right{ float: right; }
 
 .arrow{
+	margin-top: 14px;
 	width: 100%;
 	z-index: 5;
 
@@ -196,9 +197,6 @@ h3{
 	}
 
 	article{
-		p{
-			margin-bottom: 14px;
-		}
 		a{
 			text-decoration: none;
 			color: #1e1e1e;
@@ -217,34 +215,6 @@ h3{
 				text-decoration: underline;
 			}
 		}
-	}
-	
-	ul{
-		margin-top: 14px;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-	}
-	
-	li{
-		width: 133px;
-		height: 133px;
-		display: inline-block;
-		margin: 0 49px; 
-		border-radius: 50%;
-		background-color: #1B7E61;
-		
-		a{
-			display: block;
-			height: 133px;
-		}
-
-		i{
-			margin-top: 23%;
-		}
-	}
-	li:hover{
-		background-color: #1e1e1e;
 	}
 }
 
@@ -384,6 +354,44 @@ h3{
 	#map{
 		width: 100%;
 	}
+
+	ul{
+		margin: 21px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	
+	li{
+		width: 133px;
+		height: 133px;
+		display: inline-block;
+		margin: 0 49px; 
+		border-radius: 50%;
+		background-color: #22ad84;
+		
+		a{
+			display: block;
+			height: 133px;
+		}
+
+		i{
+			margin-top: 23%;
+		}
+	}
+	li:hover{
+		background-color: #1e1e1e;
+	}
+}
+
+.footer{
+	background-color: rgb(48, 66, 85);
+	@include box-sizing(border-box);
+	height: 49px;
+	text-align: center;
+	p{
+		padding-top: 14px;
+	}
 }
 
 /* PAGE STYLES
@@ -423,15 +431,16 @@ h3{
  		}
  	}
 
- 	.about{
- 		li{
- 			margin: 0 21px;
- 		}
- 	}
 
  	.media{
  		.prev, .next{
  			margin-top: -32px;
+ 		}
+ 	}
+
+ 	.contact{
+ 		li{
+ 			margin: 0 21px;
  		}
  	}
 }
@@ -461,6 +470,19 @@ h3{
 		}
 	}
 
+	.about{
+ 		.map-holder, #map{
+ 			display: none;
+ 		}
+		article{
+			a{
+				display: inline-block;
+				width: 100%;
+				text-align: center;
+			}
+		}
+ 	}
+
 	.media{
 		header{
 			margin-bottom: -280px;
@@ -471,16 +493,12 @@ h3{
 		}
 	}
 
-	.about{
-		article{
-			margin-bottom: 21px; 
+ 	.contact{
+ 		img{
+ 			margin-left: auto;
+ 			margin-right: auto;
+ 		}
 
-			a{
-				display: inline-block;
-				width: 100%;
-				text-align: center;
-			}
-		}
 		ul{
 	 		li{
 	 			width: 49px;
@@ -491,17 +509,6 @@ h3{
 	 			font-size: 2em;
 	 		}
 	 	}
- 	}
-
- 	.contact{
-
- 		.map-holder, #map{
- 			display: none;
- 		}
- 		img{
- 			margin-left: auto;
- 			margin-right: auto;
- 		}
  	}
 }
 
@@ -545,6 +552,15 @@ h3{
 		}
 	}
 	.about{
+	 	article{
+	 		a{
+	 			width: 100%;
+	 			text-align: center;
+	 		}
+	 	}
+ 	}
+
+ 	.contact{
 		ul{
 	 		li{
 	 			width: 42px;
@@ -554,13 +570,6 @@ h3{
 
 	 		i{
 	 			font-size: 1.5em;
-	 		}
-	 	}
-
-	 	article{
-	 		a{
-	 			width: 100%;
-	 			text-align: center;
 	 		}
 	 	}
  	}
