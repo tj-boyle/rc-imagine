@@ -148,7 +148,7 @@ h3{
 		top: 25%;
 	}
 
-	header{
+	.header-text{
 		margin-top: 42px;
 	}
 
@@ -384,7 +384,7 @@ h3{
 	}
 }
 
-.footer{
+footer{
 	background-color: rgb(48, 66, 85);
 	@include box-sizing(border-box);
 	height: 49px;

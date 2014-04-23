@@ -1276,7 +1276,7 @@ h3 {
   top: 25%;
 }
 /* line 151, ../sass/layout.scss */
-.landing header {
+.landing .header-text {
   margin-top: 42px;
 }
 /* line 155, ../sass/layout.scss */
@@ -1545,7 +1545,7 @@ h3 {
 }
 
 /* line 387, ../sass/layout.scss */
-.footer {
+footer {
   background-color: #304255;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1554,7 +1554,7 @@ h3 {
   text-align: center;
 }
 /* line 392, ../sass/layout.scss */
-.footer p {
+footer p {
   padding-top: 14px;
 }
 
