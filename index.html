@@ -86,7 +86,7 @@
             </div>
             <ul class='slides-container'>
                 <li>
-                    <img src='assets/images/slider-imgs/1.jpg' width='1366' height='911' alt='Bright Day'>
+                    <img src='assets/images/slider-imgs/5.jpg' width='1366' height='911' alt='Bright Day'>
                     <div class='container desc'>
                         <p class='eight columns'>Last year we were lucky enough to have a 
                             beautiful day for the event. Pictured here is a group of students 
@@ -196,8 +196,8 @@
         <div class='container'>
             <p>Created with <i class="fa fa-heart"></i> by TJ Boyle</p>
         </div>
-        <script src="assets/javascripts/all.min.js" charset="utf-8"></script>
-        <!-- // <script src="assets/javascripts/all.js" charset="utf-8"></script> -->
+        <!-- // <script src="assets/javascripts/all.min.js" charset="utf-8"></script> -->
+        <script src="assets/javascripts/all.js" charset="utf-8"></script>
         <!-- // <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSNWPbzxo6_7n7uHyLs2f8Nx8ZYcmsP4M&sensor=false"></script> -->
         <script type="text/javascript">            // When the window has finished loading create our google map below
             google.maps.event.addDomListener(window, 'load', init);
@@ -207,16 +207,19 @@
                 // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
                 var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
-                    zoom: 14,
+                    zoom: 15,
                     scrollwheel: false,
                     streetViewControl: false,
-                    center: new google.maps.LatLng(43.084, -77.668962),
+                    panControl: false,
+                    mapTypeControl: false,
+                    center: new google.maps.LatLng(43.084148, -77.675481),
                     mapTypeId: google.maps.MapTypeId.ROADMAP,
-
-                    // How you would like to style the map. 
-                    // This is where you would paste any style found on Snazzy Maps.
-                    styles: [{'featureType':'water','stylers':[{'visibility':'on'},{'color':'#acbcc9'}]},{'featureType':'landscape','stylers':[{'color':'#f2e5d4'}]},{'featureType':'road.highway','elementType':'geometry','stylers':[{'color':'#c5c6c6'}]},{'featureType':'road.arterial','elementType':'geometry','stylers':[{'color':'#e4d7c6'}]},{'featureType':'road.local','elementType':'geometry','stylers':[{'color':'#fbfaf7'}]},{'featureType':'poi.park','elementType':'geometry','stylers':[{'color':'#c5dac6'}]},{'featureType':'administrative','stylers':[{'visibility':'on'},{'lightness':33}]},{'featureType':'road'},{'featureType':'poi.park','elementType':'labels','stylers':[{'visibility':'on'},{'lightness':20}]},{},{'featureType':'road','stylers':[{'lightness':20}]}]
+                    zoomControlOptions: {
+                        style: google.maps.ZoomControlStyle.SMALL
+                    },
+                    
                 };
+
 
                 // Get the HTML DOM element that will contain your map 
                 // We are using a div with id="map" seen below in the <body>
@@ -225,6 +228,40 @@
                 // Create the Google Map using out element and options defined above
                 var map = new google.maps.Map(mapElement, mapOptions);
 
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(43.085114, -77.67161),
+                    map: map,
+                    animation: google.maps.Animation.DROP,
+                    title: 'Field House'
+                });
+
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(43.084036, -77.676221),
+                    map: map,
+                    animation: google.maps.Animation.DROP,
+                    title: 'Library'
+                });
+
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(43.083845, -77.67376),
+                    map: map,
+                    animation: google.maps.Animation.DROP,
+                    title: 'Field House'
+                });
+
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(43.083216, -77.679887),
+                    map: map,
+                    animation: google.maps.Animation.DROP,
+                    title: 'Innovation Center'
+                });
+
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(43.085387, -77.677259),
+                    map: map,
+                    animation: google.maps.Animation.DROP,
+                    title: 'Innovation Center'
+                });
                 // var mapWidth = document.getElementById('map').style.width;
                 // document.getElementById('map').style.height = mapWidth * .5;
 
