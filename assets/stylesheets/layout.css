@@ -635,53 +635,57 @@ footer p {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
   /* add code here */
-  /* line 539, ../sass/layout.scss */
+  /* line 541, ../sass/layout.scss */
   h1 {
     line-height: 42px;
     font-size: 47px;
   }
 
-  /* line 544, ../sass/layout.scss */
+  /* line 546, ../sass/layout.scss */
   .landing, .about, .contact {
     padding: 35px 0;
   }
 
-  /* line 548, ../sass/layout.scss */
+  /* line 550, ../sass/layout.scss */
   .landing {
     height: auto;
     background: #523645;
   }
-  /* line 552, ../sass/layout.scss */
+  /* line 554, ../sass/layout.scss */
   .landing .container {
     top: 0%;
   }
-  /* line 556, ../sass/layout.scss */
+  /* line 558, ../sass/layout.scss */
   .landing header {
     margin-top: 28px;
   }
-  /* line 560, ../sass/layout.scss */
+  /* line 562, ../sass/layout.scss */
   .landing img {
     width: 128px;
     height: 128px;
   }
-  /* line 565, ../sass/layout.scss */
+  /* line 567, ../sass/layout.scss */
   .landing video {
     display: none;
   }
 
-  /* line 571, ../sass/layout.scss */
+  /* line 573, ../sass/layout.scss */
   .about article a {
     width: 100%;
     text-align: center;
   }
 
-  /* line 580, ../sass/layout.scss */
+  /* line 582, ../sass/layout.scss */
   .contact ul li {
     width: 42px;
     height: 42px;
     margin: 0 14px;
   }
   /* line 586, ../sass/layout.scss */
+  .contact ul li span {
+    display: none;
+  }
+  /* line 591, ../sass/layout.scss */
   .contact ul i {
     font-size: 1.5em;
   }

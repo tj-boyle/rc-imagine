@@ -523,6 +523,8 @@ footer{
 	 		i{
 	 			font-size: 2em;
 	 		}
+
+
 	 	}
  	}
 }
@@ -581,11 +583,15 @@ footer{
 	 			width: 42px;
 	 			height: 42px;
 	 			margin: 0 14px;
+		 		span{
+		 			display: none;
+		 		}
 	 		}
 
 	 		i{
 	 			font-size: 1.5em;
 	 		}
+
 	 	}
  	}
 }
