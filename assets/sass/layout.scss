@@ -289,20 +289,22 @@ h3{
 			margin-bottom: 14px;
 		}
 	}
+	form{
+		span{
+			display: inline-block;
+			width: 36px;
+			@include border-radius(7px 0 0 7px);
+	        @include transition-duration(.4s);
+	        border-bottom: 3px solid #1B7E61;
+			background-color: #22ad84;
 
-	span{
-		display: inline-block;
-		width: 36px;
-		@include border-radius(7px 0 0 7px);
-        @include transition-duration(.4s);
-        border-bottom: 3px solid #1B7E61;
-		background-color: #22ad84;
 
-
+		}
+		span + div{
+			margin-left: 36px;
+		}
 	}
-	span + div{
-		margin-left: 36px;
-	}
+
 	#name{
 		height: 33px;
 		i{
@@ -356,13 +358,12 @@ h3{
 	}
 
 	ul{
-		margin: 21px;
-		margin-left: auto;
-		margin-right: auto;
+		margin: 21px auto 0px auto ;
 		text-align: center;
 	}
 	
 	li{
+		cursor: pointer;
 		width: 133px;
 		height: 133px;
 		display: inline-block;
@@ -371,16 +372,29 @@ h3{
 		background-color: #22ad84;
 		
 		a{
+
 			display: block;
 			height: 133px;
+			// visibility: hidden;
 		}
-
 		i{
 			margin-top: 23%;
 		}
+			span{
+
+				position: relative;
+				padding-top: 14px;
+				display: block;
+				width: inherit;
+				text-align: inherit;
+			}
 	}
 	li:hover{
 		background-color: #1e1e1e;
+		span{
+			color: #1e1e1e;
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -391,6 +405,7 @@ footer{
 	text-align: center;
 	p{
 		padding-top: 14px;
+		margin: 0;
 	}
 }
 
